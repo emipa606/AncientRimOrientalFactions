@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Ancient Rim - Oriental Factions (unfinished)</name>
+  <author>koni</author>
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+  <packageId>koni.ar.orifactions</packageId>
+  <description>Ancient Rim is a mod series that expands the cultural and technoligial timeline beyond the vanilla neolithic, industrial and spacer stages.
+The Oriental Factions mod populates RimWorld with factions that use the gear addet by Ancient Rim - Oriental/Desert Edition. Because there is just Egyptian equipment right now here is only an Egyptian faction.
+	</description>
+  <modDependencies>
+    <li>
+      <packageId>koni.ar.core</packageId>
+      <displayName>Ancient Rim - core</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/1907318659</steamWorkshopUrl>
+      <downloadUrl>https://www.dropbox.com/s/uisn03906v4be4y/AR_Core.7z?dl=0</downloadUrl>
+    </li>
+    <li>
+      <packageId>koni.ar.orient</packageId>
+      <displayName>Ancient Rim - Oriental/Desert Edition (unfinished)</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/1734141653</steamWorkshopUrl>
+      <downloadUrl>https://www.dropbox.com/s/d6ppgdakc4yy4mc/AR_Orient.7z?dl=0</downloadUrl>
+    </li>
+  </modDependencies>
+</ModMetaData>
