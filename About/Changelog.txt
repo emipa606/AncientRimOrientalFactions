@@ -1,5 +1,8 @@
 # Changelog for AncientRimOrientalFactions
 
+1.0.3.0 - Added back Jecs tools dependency for shields compatibility reasons
+
+
 1.0.2.0 - Added confiurable at game-start option
 
 
