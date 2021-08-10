@@ -129,7 +129,7 @@
       <li>SpearMen</li>
     </weaponTags>
     <modExtensions>
-      <li Class="AncientRimShields.ShieldPawnGeneratorProperties">
+      <li Class="PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>100</min>
           <max>500</max>
@@ -201,7 +201,7 @@
       <li>EgyptianHeavy</li>
     </weaponTags>
     <!--modExtensions>
-		<li Class="AncientRimShields.ShieldPawnGeneratorProperties">
+		<li Class="PawnShields.ShieldPawnGeneratorProperties">
 			<shieldMoney>
 				<min>200</min>
 				<max>2000</max>
@@ -223,7 +223,7 @@
       <li>SpearMen</li>
     </weaponTags>
     <modExtensions>
-      <li Class="AncientRimShields.ShieldPawnGeneratorProperties">
+      <li Class="PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>100</min>
           <max>500</max>
