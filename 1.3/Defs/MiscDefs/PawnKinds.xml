@@ -48,9 +48,7 @@
       <li>EgyptianBasic</li>
     </apparelTags>
   </PawnKindDef>
-  <PawnKindDef Name="EgyptNoble" ParentName="EgyptCitizen">
-    <defName>AR_Scribe</defName>
-    <label>Scribe</label>
+  <PawnKindDef Name="EgyptNoble" ParentName="EgyptCitizen" Abstract="True">
     <minGenerationAge>40</minGenerationAge>
     <maxGenerationAge>100</maxGenerationAge>
     <gearHealthRange>
@@ -71,6 +69,10 @@
     <apparelTags>
       <li>EgyptianNoble</li>
     </apparelTags>
+  </PawnKindDef>
+  <PawnKindDef ParentName="EgyptNoble">
+    <defName>AR_Scribe</defName>
+    <label>Scribe</label>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptNoble">
     <defName>AR_ETrader</defName>
