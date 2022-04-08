@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <CultureDef>
     <defName>Rahism</defName>
@@ -20,10 +20,18 @@
       <despised>Ultratech</despised>
     </preferredWeaponClasses>
     <thingStyleCategories>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>Totemic</category>
-        <priority>2</priority>
-      </li>
+		<li MayRequire="sarg.alphamemes">
+			<category MayRequire="sarg.alphamemes">AM_Kemetic</category>
+			<priority>1</priority>
+		</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+			<category>Animalist</category>
+			<priority>2</priority>
+		</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">
+			<category>Totemic</category>
+			<priority>3</priority>
+		</li>
     </thingStyleCategories>
     <styleItemTags>
       <li>
