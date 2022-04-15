@@ -11,7 +11,7 @@
     </backstoryCategories>
     <race>Human</race>
     <apparelTags>
-      <li>EgyptianBasic</li>
+		<li>EgyptianBasic</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef Name="EgyptCitizen" ParentName="PawnEgyptBase">
@@ -19,7 +19,7 @@
 	<!-- This is technically the Arabian term for "peasant", but it was used by Copts after the Roman, then Christian, conquest of Egypt and beyond -->
     <label>fellah</label>
 	<labelPlural>fellahin</labelPlural>
-    <combatPower>25</combatPower>
+    <combatPower>20</combatPower>
     <itemQuality>Poor</itemQuality>
     <isFighter>false</isFighter>
     <initialWillRange>1~2</initialWillRange>
@@ -60,6 +60,10 @@
 	<labelPlural>Scribes</labelPlural>
     <minGenerationAge>35</minGenerationAge>
     <maxGenerationAge>55</maxGenerationAge>
+	<combatPower>15</combatPower>
+	<apparelRequired>
+		<li>Apparel_Robe</li>
+	</apparelRequired>
     <gearHealthRange>
       <min>1.0</min>
       <max>3.0</max>
@@ -79,10 +83,11 @@
       <li>EgyptianNoble</li>
     </apparelTags>
   </PawnKindDef>
+
   <PawnKindDef ParentName="EgyptNoble">
     <defName>AR_ETrader</defName>
-    <label>tradesman</label>
-	<labelPlural>tradesmen</labelPlural>
+    <label>Nile tradesman</label>
+	<labelPlural>Nile tradesmen</labelPlural>
     <trader>true</trader>
 	<apparelMoney>
       <min>900</min>
@@ -97,14 +102,15 @@
     </apparelTags>
 	<weaponTags>
       <li>EgyptianNoble</li>
-	  <li>OriantalMedium</li>
+	  <li>OrientalMedium</li>
     </weaponTags>
   </PawnKindDef>
+
   <PawnKindDef Name="EgyptBaseFighter" ParentName="PawnEgyptBase" Abstract="True">
     <canBeSapper>true</canBeSapper>
-    <combatPower>35</combatPower>
     <isFighter>true</isFighter>
     <maxGenerationAge>65</maxGenerationAge>
+	<combatPower>30</combatPower>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.0</max>
@@ -128,8 +134,8 @@
     <techHediffsChance>0.001</techHediffsChance>
     <invNutrition>3.0</invNutrition>
     <apparelTags>
-	  <li>OriantalMedium</li>
-      <li>OriantalLight</li>
+	  <li>OrientalMedium</li>
+      <li>OrientalLight</li>
 	  <li>EgyptianLight</li>
       <li>EgyptianBasic</li>
     </apparelTags>
@@ -151,7 +157,7 @@
       <li>NeolithicMeleeBasic</li>
     </weaponTags>
 	<apparelTags>
-      <li>OriantalLight</li>
+      <li>OrientalLight</li>
 	  <li>EgyptianLight</li>
       <li>EgyptianBasic</li>
     </apparelTags>
@@ -162,7 +168,7 @@
     <labelPlural>spearmen</labelPlural>
     <canBeSapper>true</canBeSapper>
     <weaponTags>
-      <li>SpearMen</li>
+		<li>SpearMen</li>
     </weaponTags>
     <modExtensions>
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
@@ -184,7 +190,7 @@
       <max>600</max>
     </weaponMoney>
 	<apparelTags>
-      <li>OriantalLight</li>
+      <li>OrientalLight</li>
 	  <li>EgyptianLight</li>
       <li>EgyptianBasic</li>
     </apparelTags>
@@ -193,7 +199,7 @@
     <defName>AR_EArcher</defName>
     <label>archer</label>
     <weaponTags>
-      <li>BowMen</li>
+		<li>BowMen</li>
     </weaponTags>
 	<apparelMoney>
       <min>350</min>
@@ -204,7 +210,7 @@
       <max>600</max>
     </weaponMoney>
 	<apparelTags>
-      <li>OriantalLight</li>
+      <li>OrientalLight</li>
 	  <li>EgyptianLight</li>
       <li>EgyptianBasic</li>
     </apparelTags>
@@ -212,9 +218,9 @@
   <PawnKindDef ParentName="EgyptBaseFighter">
     <defName>AR_ESlinger</defName>
     <label>slinger</label>
+	<combatPower>5</combatPower>
     <weaponTags>
-      <li>Slinger</li>
-	  <li>NeolithicRangedBasic</li>
+		<li>Slinger</li>
     </weaponTags>
 	 <apparelMoney>
       <min>250</min>
@@ -225,7 +231,7 @@
       <max>600</max>
     </weaponMoney>
 	<apparelTags>
-      <li>OriantalLight</li>
+      <li>OrientalLight</li>
 	  <li>EgyptianLight</li>
       <li>EgyptianBasic</li>
     </apparelTags>
@@ -236,9 +242,11 @@
     <weaponTags>
 		<li>Javeliner</li>
 		<li>EgyptianLight</li>
-		<li>OriantalLight</li>
+		<li>OrientalLight</li>
 		<li>NeolithicMeleeBasic</li>
 		<li>NeolithicMeleeDecent</li>
+		<li>NeolithicRangedBasic</li>
+		<li>NeolithicRangedDecent</li>
 		<li>MedievalMeleeBasic</li>
 		<li>MedievalMeleeDecent</li>
     </weaponTags>
@@ -251,15 +259,15 @@
       <max>3000</max>
     </weaponMoney>
 	<apparelTags>
-      <li>OriantalLight</li>
+      <li>OrientalLight</li>
 	  <li>EgyptianLight</li>
-	  <li>OriantalMedium</li>
+	  <li>OrientalMedium</li>
       <li>EgyptianBasic</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef Name="EgyptBaseFighterB" ParentName="PawnEgyptBase" Abstract="True">
     <canBeSapper>true</canBeSapper>
-    <combatPower>55</combatPower>
+    <combatPower>35</combatPower>
     <isFighter>true</isFighter>
 	<minGenerationAge>24</minGenerationAge>
     <maxGenerationAge>60</maxGenerationAge>
@@ -286,8 +294,8 @@
     <techHediffsChance>0.001</techHediffsChance>
     <invNutrition>3.0</invNutrition>
     <apparelTags>
-      <li>OriantalMedium</li>
-	  <li>OriantalHeavy</li>
+      <li>OrientalMedium</li>
+	  <li>OrientalHeavy</li>
       <li>EgyptianBasic</li>
     </apparelTags>
   </PawnKindDef>
@@ -295,7 +303,7 @@
     <defName>AR_EHeavy</defName>
     <label>heavy fighter</label>
     <canBeSapper>true</canBeSapper>
-	<combatPower>80</combatPower>
+	<combatPower>70</combatPower>
     <weaponTags>
       <li>EgyptianHeavy</li>
     </weaponTags>
@@ -319,8 +327,8 @@
       <max>1500</max>
     </weaponMoney>
 	<apparelTags>
-      <li>OriantalMedium</li>
-	  <li>OriantalHeavy</li>
+      <li>OrientalMedium</li>
+	  <li>OrientalHeavy</li>
       <li>EgyptianBasic</li>
     </apparelTags>
   </PawnKindDef>
@@ -329,9 +337,11 @@
     <label>heavy spearman</label>
     <labelPlural>heavy spearmen</labelPlural>
     <canBeSapper>true</canBeSapper>
+	<combatPower>45</combatPower>
     <weaponTags>
       <li>SpearMen</li>
 	  <li>Spear</li>
+	  <li>Lance</li>
     </weaponTags>
 	<apparelMoney>
       <min>1500</min>
@@ -342,8 +352,8 @@
       <max>5000</max>
     </weaponMoney>
 	<apparelTags>
-      <li>OriantalMedium</li>
-	  <li>OriantalHeavy</li>
+      <li>OrientalMedium</li>
+	  <li>OrientalHeavy</li>
       <li>EgyptianBasic</li>
     </apparelTags>
     <modExtensions>
@@ -377,15 +387,15 @@
       <max>5000</max>
     </weaponMoney>
 	<apparelTags>
-      <li>OriantalMedium</li>
-	  <li>OriantalHeavy</li>
+      <li>OrientalMedium</li>
+	  <li>OrientalHeavy</li>
       <li>EgyptianBasic</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptBaseFighterB">
     <defName>AR_EJavelineer</defName>
     <label>Javelineer</label>
-	<combatPower>75</combatPower>
+	<combatPower>50</combatPower>
     <weaponTags>
       <li>Javeliner</li>
     </weaponTags>
@@ -398,19 +408,20 @@
       <max>3000</max>
     </weaponMoney>
 	<apparelTags>
-      <li>OriantalMedium</li>
-	  <li>OriantalHeavy</li>
+      <li>OrientalMedium</li>
+	  <li>OrientalHeavy</li>
       <li>EgyptianBasic</li>
     </apparelTags>
   </PawnKindDef>
-  <PawnKindDef ParentName="EgyptNoble">
+
+  <PawnKindDef Name="Pharaoh" ParentName="EgyptNoble">
     <defName>AR_Pharao</defName>
     <label>Pharaoh</label>
-    <combatPower>90</combatPower>
+    <combatPower>100</combatPower>
     <factionLeader>true</factionLeader>
     <minGenerationAge>21</minGenerationAge>
     <maxGenerationAge>100</maxGenerationAge>
-    <itemQuality>Masterwork</itemQuality>
+    <itemQuality>Legendary</itemQuality>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <gearHealthRange>
       <min>1.0</min>
@@ -427,7 +438,7 @@
     <weaponTags>
       <li>EgyptianRoyal</li>
 	  <li>EgyptianHeavy</li>
-	  <li>OriantalHeavy</li>
+	  <li>OrientalHeavy</li>
     </weaponTags>
     <apparelTags>
       <li>EgyptianNoble</li>
