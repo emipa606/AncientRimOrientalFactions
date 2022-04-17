@@ -13,7 +13,7 @@
     <allowedPlaceTags>
       <li>OriginTribal</li>
     </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/Village</iconPath>
+    <iconPath>Icon/EgyptianCulture</iconPath>
     <iconColor>(0.8, 0.8, 0.8)</iconColor>
     <preferredWeaponClasses>
       <noble>Neolithic</noble>
@@ -22,7 +22,7 @@
     <thingStyleCategories>
 		<li MayRequire="sarg.alphamemes">
 			<category MayRequire="sarg.alphamemes">AM_Kemetic</category>
-			<priority>1</priority>
+			<priority MayRequire="sarg.alphamemes">999</priority>
 		</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">
 			<category>Animalist</category>
@@ -30,7 +30,7 @@
 		</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">
 			<category>Totemic</category>
-			<priority>3</priority>
+			<priority>1</priority>
 		</li>
     </thingStyleCategories>
     <styleItemTags>
