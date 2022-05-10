@@ -4,6 +4,7 @@
   <FactionDef ParentName="FactionBase">
     <defName>AR_Faction_Egypt</defName>
     <label>Kemet</label>
+	<categoryTag>Egypt</categoryTag>
     <description>Ten thousand years ago in the Old Earth continent of Africa, the Ancient Egyptian civilization built itself up to be one of the greatest civilizations of all time. Ancient Egyptians referred to their country as Kemet, literally meaning ''Black Land''. Lasting thousands of years before being crushed by the Romans, its society was a complex, collectivist structure with defined hiearchies under the rule of one Pharaoh. The Pharaoh, who was considered to be a god himself, served as head of the religion, and he was responsible for enforcing the Ma'at, the gods' order, and balancing order and society both as deity and mediator. Important to these peoples are the cycle of flooding in floodplains, death and the proper process of embalming, and the aforementioned Ma'at. \n \n Egypt was considered ancient when Rome conquered it, so how did it end up on the Rim in its classical form? Although there is no conclusive evidence of intelligent alien life, the Egyptians' mythology has expanded to include a reptialian god called Ju Ahet, who is said to have ''taken up'' Kemetic Egyptians as slaves and scattered them across the galaxy. He ultimately came to value them and freed them, giving them the resources they needed to rebuild their civilization as it once was.</description>
     <pawnsPlural>Rmtt</pawnsPlural>
     <pawnSingular>Rmt</pawnSingular>
