@@ -71,7 +71,7 @@
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>
       <min>0</min> <!-- Freezing point Celcius -->
-      <max>120</max>
+      <max>90</max>
     </allowedArrivalTemperatureRange>
     <maxPawnCostPerTotalPointsCurve>
       <points>
