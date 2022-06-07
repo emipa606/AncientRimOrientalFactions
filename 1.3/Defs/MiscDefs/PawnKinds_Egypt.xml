@@ -9,7 +9,7 @@
 		<backstoryCategories>
 			<li>Tribal</li>
 		</backstoryCategories>
-			<race>Human</race>
+		<race>Human</race>
 		<apparelTags>
 			<li>EgyptianBasic</li>
 		</apparelTags>
@@ -414,8 +414,6 @@
 	<combatPower>80</combatPower>
     <weaponTags>
 		<li>NeolithicRangedDecent</li>
-		<li>NeolithicRangedAdvanced</li>
-		<li>NeolithicRangedChief</li>
 		<li>MedievalRangedDecent</li>
 		<li>MedievalRangedAdvanced</li>
     </weaponTags>
@@ -463,12 +461,12 @@
     <factionLeader>true</factionLeader>
     <minGenerationAge>18</minGenerationAge>
     <maxGenerationAge>100</maxGenerationAge>
-	<backstoryCryptosleepCommonality>0.001</backstoryCryptosleepCommonality>
+	<backstoryCryptosleepCommonality>0.15</backstoryCryptosleepCommonality>
     <itemQuality>Legendary</itemQuality>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 	<biocodeWeaponChance Inherit="False">0.9</biocodeWeaponChance>
     <gearHealthRange>
-      <min>1.0</min>
+      <min>1.5</min>
       <max>3.0</max>
     </gearHealthRange>
     <apparelMoney>
