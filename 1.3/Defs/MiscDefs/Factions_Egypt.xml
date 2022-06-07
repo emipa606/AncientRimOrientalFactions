@@ -62,6 +62,7 @@
       <li>Caravan_Neolithic_WarMerchant</li>
       <li>Caravan_Neolithic_Slaver</li>
       <li>Caravan_Neolithic_ShamanMerchant</li>
+	  <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
@@ -125,7 +126,7 @@
 		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
-		<!-- For some reason, the game eliminates the entire Slavery Precept when generating Egypt if this existsi n the code -->
+		<!-- For some reason, the game eliminates the entire Slavery Precept when generating Egypt if this exists in the code -->
 		<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li> -->
 		
 		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>		
