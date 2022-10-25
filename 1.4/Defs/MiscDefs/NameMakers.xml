@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerPersonEgypt</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[NamesEgypt] of [NamesEgypt]</li>
+        <li>name-&gt;[NamesEgypt] [NamesEgypt]</li>
+        <li>name-&gt;[NamesEgypt] the [Numbers].</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>Numbers</keyword>
+          <path>Words/Foreign/Numbers</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>NamesEgypt</keyword>
+          <path>Words/Foreign/NamesEgypt</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>NamerSettlementEgypt</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;[NamesEgypt]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>NamesEgypt</keyword>
+          <path>Words/Foreign/NamesEgypt</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>NamerFactionEgypt</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt; Kemet</li>
+        <li>name-&gt; Aegyptus</li>
+        <li>name-&gt; Pharaonic Empire</li>
+        <li>name-&gt; Black Lands</li>
+        <li>name-&gt; Egypt</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>
