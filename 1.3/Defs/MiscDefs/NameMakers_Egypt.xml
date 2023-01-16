@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <RulePackDef>
     <defName>NamerPersonEgypt</defName>
@@ -6,7 +6,7 @@
       <rulesStrings>
         <li>name-&gt;[NamesEgypt] of [NamesEgypt]</li>
         <li>name-&gt;[NamesEgypt] [NamesEgypt]</li>
-        <li>name-&gt;[NamesEgypt] the [Numbers].</li>
+        <li>name-&gt;[NamesEgypt] the [Numbers]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -43,6 +43,10 @@
         <li>name-&gt; Pharaonic Empire</li>
         <li>name-&gt; Black Lands</li>
         <li>name-&gt; Egypt</li>
+		<li>name-&gt; Ju Ahet</li>
+		<li>name-&gt; Ptolomey Land</li>
+		<li>name-&gt; Thirty-Fifth Dynasty</li>
+		<li>name-&gt; Thirty-Fifth Dynasty of Egypt</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
