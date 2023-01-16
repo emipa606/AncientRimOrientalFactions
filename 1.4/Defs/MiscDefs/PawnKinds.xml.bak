@@ -72,7 +72,7 @@
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptNoble">
     <defName>AR_Scribe</defName>
-    <label>scribe</label>
+    <label>Scribe</label>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptNoble">
     <defName>AR_ETrader</defName>
@@ -245,14 +245,14 @@
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptBaseFighterB">
     <defName>AR_EJavelineer</defName>
-    <label>javelineer</label>
+    <label>Javelineer</label>
     <weaponTags>
       <li>Javeliner</li>
     </weaponTags>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptNoble">
     <defName>AR_Pharao</defName>
-    <label>pharaoh</label>
+    <label>Pharao</label>
     <combatPower>55</combatPower>
     <factionLeader>true</factionLeader>
     <minGenerationAge>40</minGenerationAge>
