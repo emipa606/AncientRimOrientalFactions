@@ -1,1 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Defs>	<TraderKindDef MayRequire="sarg.alphamemes">		<defName MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</defName>		<label MayRequire="sarg.alphamemes">pristine marble dealer</label>		<stockGenerators MayRequire="sarg.alphamemes">			<!-- Resources -->			<li Class="StockGenerator_SingleDef" MayRequire="sarg.alphamemes">				<thingDef MayRequire="sarg.alphamemes">AM_BlocksPristineLimestone</thingDef>				<countRange MayRequire="sarg.alphamemes">20~100</countRange>			</li>		</stockGenerators>	</TraderKindDef></Defs>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraderKindDef MayRequire="sarg.alphamemes">
+    <defName MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</defName>
+    <label MayRequire="sarg.alphamemes">pristine marble dealer</label>
+    <stockGenerators MayRequire="sarg.alphamemes">
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef" MayRequire="sarg.alphamemes">
+        <thingDef MayRequire="sarg.alphamemes">AM_BlocksPristineLimestone</thingDef>
+        <countRange MayRequire="sarg.alphamemes">20~100</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>
