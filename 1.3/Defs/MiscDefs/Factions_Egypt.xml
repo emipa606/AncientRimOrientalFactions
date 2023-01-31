@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!--Egypt-->
   <FactionDef ParentName="FactionBase">
     <defName>AR_Faction_Egypt</defName>
     <label>Kemet</label>
-	<categoryTag>Egypt</categoryTag>
+    <categoryTag>Egypt</categoryTag>
     <description>Ten thousand years ago in the Old Earth continent of Africa, the Ancient Egyptian civilization built itself up to be one of the greatest civilizations of all time. Ancient Egyptians referred to their country as Kemet, literally meaning ''Black Land''. Lasting thousands of years before being crushed by the Romans, its society was a complex, collectivist structure with defined hiearchies under the rule of one Pharaoh. The Pharaoh, who was considered to be a god himself, served as head of the religion, and he was responsible for enforcing the Ma'at, the gods' order, and balancing order and society both as deity and mediator. Important to these peoples are the cycle of flooding in floodplains, death and the proper process of embalming, and the aforementioned Ma'at. \n \n Egypt was considered ancient when Rome conquered it, so how did it end up on the Rim in its classical form? Although there is no conclusive evidence of intelligent alien life, the Egyptians' mythology has expanded to include a reptialian god called Ju Ahet, who is said to have ''taken up'' Kemetic Egyptians as slaves and scattered them across the galaxy. He ultimately came to value them and freed them, giving them the resources they needed to rebuild their civilization as it once was.</description>
     <pawnsPlural>Rmtt</pawnsPlural>
     <pawnSingular>Rmt</pawnSingular>
@@ -12,7 +12,7 @@
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
-	<rescueesCanJoin>true</rescueesCanJoin>
+    <rescueesCanJoin>true</rescueesCanJoin>
     <canMakeRandomly>true</canMakeRandomly>
     <canSiege>false</canSiege>
     <canStageAttacks>true</canStageAttacks>
@@ -29,21 +29,21 @@
     </colorSpectrum>
     <apparelStuffFilter>
       <stuffCategoriesToAllow>
-		<li>Woody</li>
+        <li>Woody</li>
         <li>Metallic</li>
         <li>Fabric</li>
         <li>Leathery</li>
-		<li>Stony</li>
+        <li>Stony</li>
       </stuffCategoriesToAllow>
       <disallowedThingDefs>
         <li>Steel</li>
-		<li>Plasteel</li>
+        <li>Plasteel</li>
       </disallowedThingDefs>
     </apparelStuffFilter>
     <factionNameMaker>NamerFactionEgypt</factionNameMaker>
     <settlementNameMaker>NamerSettlementEgypt</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
-	<backstoryFilters>
+    <backstoryFilters>
       <li>
         <categories>
           <li>Tribal</li>
@@ -62,7 +62,7 @@
       <li>Caravan_Neolithic_WarMerchant</li>
       <li>Caravan_Neolithic_Slaver</li>
       <li>Caravan_Neolithic_ShamanMerchant</li>
-	  <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
+      <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
@@ -71,7 +71,8 @@
       <li>Base_Neolithic_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>
-      <min>0</min> <!-- Freezing point Celcius -->
+      <min>0</min>
+      <!-- Freezing point Celcius -->
       <max>90</max>
     </allowedArrivalTemperatureRange>
     <maxPawnCostPerTotalPointsCurve>
@@ -83,70 +84,60 @@
         <li>(100000, 10000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>
-	
-	<requiredMemes>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
-		
-		<!-- If you have the Mod -->
-		<li MayRequire="Sarg.AlphaMemes">AM_Structure_Kemetism</li>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_GodEmperor</li>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_Light</li>
-	</requiredMemes>
-	
-	<disallowedMemes>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
-
-		<!-- Women could divorce, own land, own property, and so on, women were legally equals (even if this wasn't always applied uniformly) -->
-		<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
-		
-		<!-- Forbidden Mod Memes -->
-		<!--
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+      <!-- If you have the Mod -->
+      <li MayRequire="Sarg.AlphaMemes">AM_Structure_Kemetism</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_GodEmperor</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Light</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+      <!-- Women could divorce, own land, own property, and so on, women were legally equals (even if this wasn't always applied uniformly) -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      <!-- Forbidden Mod Memes -->
+      <!--
 		<li MayRequire="llunak.MorePrecepts">Pacifism</li>
 		<li MayRequire="Qux.factionhippie">PeaceLove</li>
 		<li MayRequire="Zezz.Altrumeme">Altruism</li>
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
 		-->
-		<li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
-		<li MayRequire="SZ.TW.New.GuoHun">SZ_Structure_CultureQiYuan</li>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
-		<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
-	</disallowedMemes>
-	
-	<disallowedPrecepts>
-		<!-- DUH -->
-		<li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
-		<!-- For some reason, the game eliminates the entire Slavery Precept when generating Egypt if this exists in the code -->
-		<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li> -->
-		
-		<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>		
-
-		<!-- The following Precepts are only forbidden if you have the Mod -->
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Abhorrent</li>
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Horrible</li>
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Disapproved</li>
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Standard</li>
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Approved</li>
-		<!-- For some reason, the game eliminates the entire Precept category when generating Egypt if this exists in the code -->
-		<!-- <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Respected</li> -->
-		
-		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
-		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
-		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
-		<!-- For some reason, the game eliminates the entire Precept category when generating Egypt if this exists in the code -->
-		<!-- <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Acceptable</li> -->
-	</disallowedPrecepts>
-	
+      <li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
+      <li MayRequire="SZ.TW.New.GuoHun">SZ_Structure_CultureQiYuan</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
+      <li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <!-- DUH -->
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+      <!-- For some reason, the game eliminates the entire Slavery Precept when generating Egypt if this exists in the code -->
+      <!-- <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li> -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+      <!-- The following Precepts are only forbidden if you have the Mod -->
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Abhorrent</li>
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Horrible</li>
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Disapproved</li>
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Standard</li>
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Approved</li>
+      <!-- For some reason, the game eliminates the entire Precept category when generating Egypt if this exists in the code -->
+      <!-- <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Respected</li> -->
+      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
+      <!-- For some reason, the game eliminates the entire Precept category when generating Egypt if this exists in the code -->
+      <!-- <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Acceptable</li> -->
+    </disallowedPrecepts>
     <pawnGroupMakers>
       <li>
         <kindDef>Peaceful</kindDef>
@@ -165,7 +156,7 @@
           <AR_EArcher>50</AR_EArcher>
           <AR_ESlinger>50</AR_ESlinger>
           <AR_ESkirmisher>50</AR_ESkirmisher>
-		  <AR_Pharao>15</AR_Pharao>
+          <AR_Pharao>15</AR_Pharao>
         </options>
       </li>
       <li>
@@ -188,9 +179,8 @@
           <Dromedary>100</Dromedary>
           <Alpaca>1</Alpaca>
           <Elephant>100</Elephant>
-		  
-		  <!-- If you have the Desert Expanded Mod, MORE CAMELS -->
-		  <AEXP_Camel MayRequire="VanillaExpanded.VAEED">100</AEXP_Camel>
+          <!-- If you have the Desert Expanded Mod, MORE CAMELS -->
+          <AEXP_Camel MayRequire="VanillaExpanded.VAEED">100</AEXP_Camel>
         </carriers>
         <guards>
           <AR_EPeasant>30</AR_EPeasant>

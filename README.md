@@ -1,6 +1,5 @@
 # AncientRimOrientalFactions
-
-
+
 ![Image](https://i.imgur.com/buuPQel.png)
 
 Update of konis mod
@@ -26,6 +25,8 @@ The Oriental Factions mod populates RimWorld with factions that use the gear add
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
+
 
 
 
