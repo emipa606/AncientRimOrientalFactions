@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <TraderKindDef MayRequire="sarg.alphamemes">
     <defName MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</defName>

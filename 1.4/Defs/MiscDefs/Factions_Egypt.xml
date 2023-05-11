@@ -65,7 +65,7 @@
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
-	  <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
+      <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
     </visitorTraderKinds>
     <baseTraderKinds>
       <li>Base_Neolithic_Standard</li>
@@ -204,8 +204,8 @@
           <AR_EArcherH>50</AR_EArcherH>
           <AR_EJavelineer>50</AR_EJavelineer>
           <AR_Pharao>8</AR_Pharao>
-		  <AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
-		  <Dromedary>2</Dromedary>
+          <AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
+          <Dromedary>2</Dromedary>
         </options>
       </li>
     </pawnGroupMakers>

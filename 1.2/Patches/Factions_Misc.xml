@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Patch>
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-	<xpath>/Defs/FactionDef[defName="Empire"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-			<!-- ========== Change tribal label ========== -->
-			<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
-			<value>
-				<li>AR_Faction_Egypt</li>
-			</value>
-		</match>
-	</Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/FactionDef[defName="Empire"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <!-- ========== Change tribal label ========== -->
+      <xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+      <value>
+        <li>AR_Faction_Egypt</li>
+      </value>
+    </match>
+  </Operation>
 </Patch>
