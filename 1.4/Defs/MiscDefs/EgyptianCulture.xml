@@ -13,16 +13,24 @@
     <allowedPlaceTags>
       <li>OriginTribal</li>
     </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/Village</iconPath>
+    <iconPath>Icon/EgyptianCulture</iconPath>
     <iconColor>(0.8, 0.8, 0.8)</iconColor>
     <preferredWeaponClasses>
       <noble>Neolithic</noble>
       <despised>Ultratech</despised>
     </preferredWeaponClasses>
     <thingStyleCategories>
+      <li MayRequire="sarg.alphamemes">
+        <category MayRequire="sarg.alphamemes">AM_Kemetic</category>
+        <priority MayRequire="sarg.alphamemes">999</priority>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Animalist</category>
+        <priority>2</priority>
+      </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
         <category>Totemic</category>
-        <priority>2</priority>
+        <priority>1</priority>
       </li>
     </thingStyleCategories>
     <styleItemTags>
