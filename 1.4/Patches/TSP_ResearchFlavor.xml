@@ -4,8 +4,8 @@
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
 	<xpath>/Defs/FactionDef[defName="Empire"]</xpath>
-		<!-- If it does, inset this in the same qualifier as the target. -->
-		<match Class="PatchOperationAdd">
+		<!-- If it does, insert this in the same qualifier as the target. -->
+		<match Class="PatchOperationInsert">
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef/heldByFactionCategoryTags/li[text()="Empire"]</xpath>
 			<value>
@@ -19,8 +19,8 @@
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
 	<xpath>/Defs/FactionDef[defName="TribeCivil"]</xpath>
-		<!-- If it does, inset this in the same qualifier as the target. -->
-		<match Class="PatchOperationAdd">
+		<!-- If it does, insert this in the same qualifier as the target. -->
+		<match Class="PatchOperationInsert">
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef/heldByFactionCategoryTags/li[text()="Tribal"]</xpath>
 			<value>
@@ -33,8 +33,8 @@
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
 	<xpath>/Defs/FactionDef[defName="Ancients"]</xpath>
-		<!-- If it does, inset this in the same qualifier as the target. -->
-		<match Class="PatchOperationAdd">
+		<!-- If it does, insert this in the same qualifier as the target. -->
+		<match Class="PatchOperationInsert">
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef/heldByFactionCategoryTags/li[text()="Ancient"]</xpath>
 			<value>
