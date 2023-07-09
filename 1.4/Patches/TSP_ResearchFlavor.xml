@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/FactionDef[defName="Empire"]</xpath>
+		<!-- If it does, insert this in the same qualifier as the target. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef/heldByFactionCategoryTags/li[text()="Empire"]</xpath>
+			<value>
+				<li MayRequire="morph.frx.teleportermain">UnknownFaction</li>
+				<li>Egypt</li> <!-- How else could they build the pyramids? -->
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/FactionDef[defName="TribeCivil"]</xpath>
+		<!-- If it does, insert this in the same qualifier as the target. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef/heldByFactionCategoryTags/li[text()="Tribal"]</xpath>
+			<value>
+				<li>Egypt</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/FactionDef[defName="Ancients"]</xpath>
+		<!-- If it does, insert this in the same qualifier as the target. -->
+		<match Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef/heldByFactionCategoryTags/li[text()="Ancient"]</xpath>
+			<value>
+				<li MayRequire="morph.frx.teleportermain">UnknownFaction</li>
+				<li>Egypt</li> <!-- How else could they build the pyramids? -->
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>
