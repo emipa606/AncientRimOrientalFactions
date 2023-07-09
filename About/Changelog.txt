@@ -1,5 +1,8 @@
 # Changelog for AncientRimOrientalFactions
 
+1.4.5 - The Egyptian empire will now correctly give access to tech-prints
+
+
 1.4.4 - Added bug-fixes and compatibility with some other mods, now in 1.4. Thanks TurtleShroom
 
 

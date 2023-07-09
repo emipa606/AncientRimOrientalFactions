@@ -27,4 +27,4 @@ The Oriental Factions mod populates RimWorld with factions that use the gear add
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2458189325]Last updated 2023-05-11
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2458189325]Last updated 2023-07-09
