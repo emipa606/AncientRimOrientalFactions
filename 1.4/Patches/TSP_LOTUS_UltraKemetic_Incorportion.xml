@@ -3,7 +3,7 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- DO THE GENTILES KNOW? -->
-	<xpath>/Defs/FactionDef[defName="UpperKemet"]</xpath>
+	<xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
 			<success>Always</success>
@@ -26,7 +26,7 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-	<xpath>/Defs/FactionDef[defName="UpperKemet"]</xpath>
+	<xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
@@ -69,8 +69,8 @@
 						<!-- As this society is more wealthy, it can afford mercenaries -->
 						<Grenadier_Destructive>5</Grenadier_Destructive>
 						<Mercenary_Slasher>7</Mercenary_Slasher>
-						<Mercenary_Gunner>20</Mercenary_Gunner>
-						<Mercenary_Elite>20</Mercenary_Elite>
+						<Mercenary_Gunner>11</Mercenary_Gunner>
+						<Mercenary_Elite>15</Mercenary_Elite>
 					</options>
 				  </li>
 				  <li>
@@ -169,7 +169,7 @@
 						<kindDef>Farmers</kindDef>
 						<commonality>1</commonality>
 						<options>
-							<AR_EPeasant>200</AR_EPeasant>
+							<AR_EPeasant>70</AR_EPeasant>
 							<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
 							<Dromedary>4</Dromedary>
 							<Grenadier_Destructive>1.5</Grenadier_Destructive>
