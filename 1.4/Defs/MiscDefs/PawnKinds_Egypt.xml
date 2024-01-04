@@ -10,7 +10,7 @@
       <li>Tribal</li>
     </backstoryCategories>
     <race>Human</race>
-    <apparelTags>
+    <apparelTags Inherit="False">
       <li>EgyptianBasic</li>
     </apparelTags>
   </PawnKindDef>
@@ -152,7 +152,8 @@
     <maxGenerationAge>75</maxGenerationAge>
     <combatPower>15</combatPower>
     <apparelRequired>
-      <li>Apparel_Robe</li>
+      <li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
+	  <li MayRequire="ludeon.rimworld.ideology">Apparel_Hood</li>
     </apparelRequired>
     <gearHealthRange>
       <min>1.0</min>
@@ -181,7 +182,7 @@
     <labelPlural>Nile tradesmen</labelPlural>
     <trader>true</trader>
     <apparelRequired>
-      <li>Apparel_Robe</li>
+      <li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
     </apparelRequired>
     <apparelMoney>
       <min>900</min>
@@ -423,6 +424,7 @@
     <combatPower>50</combatPower>
     <weaponTags>
       <li>Javeliner</li>
+	  <li>Javelineer</li>
     </weaponTags>
     <apparelMoney>
       <min>250</min>
@@ -441,10 +443,11 @@
   <PawnKindDef Name="Pharaoh" ParentName="EgyptNoble">
     <defName>AR_Pharao</defName>
     <label>Pharaoh</label>
+	<fixedGender>Male</fixedGender>
     <combatPower>100</combatPower>
     <factionLeader>true</factionLeader>
     <minGenerationAge>18</minGenerationAge>
-    <maxGenerationAge>100</maxGenerationAge>
+    <maxGenerationAge>50</maxGenerationAge>
     <backstoryCryptosleepCommonality>0.15</backstoryCryptosleepCommonality>
     <itemQuality>Legendary</itemQuality>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -461,6 +464,44 @@
       <min>5000</min>
       <max>10000</max>
     </weaponMoney>
+    <weaponTags>
+      <li>EgyptianRoyal</li>
+      <li>EgyptianHeavy</li>
+      <li>OrientalHeavy</li>
+    </weaponTags>
+    <apparelTags>
+      <li>EgyptianNoble</li>
+      <li>EgyptianRoyal</li>
+    </apparelTags>
+  </PawnKindDef>
+  <PawnKindDef ParentName="Pharaoh">
+    <defName>TSP_AR_Cleopatra</defName>
+    <label>Pharaoh</label>
+	<fixedGender>Female</fixedGender>
+    <combatPower>70</combatPower>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>22</minGenerationAge>
+    <maxGenerationAge>31</maxGenerationAge>
+    <backstoryCryptosleepCommonality>0.15</backstoryCryptosleepCommonality>
+    <itemQuality>Legendary</itemQuality>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <biocodeWeaponChance Inherit="False">0.9</biocodeWeaponChance>
+    <gearHealthRange>
+      <min>1.5</min>
+      <max>3.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>9000</min>
+      <max>18000</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>5000</min>
+      <max>10000</max>
+    </weaponMoney>
+	<apparelRequired>
+		<li>AR_EgyptFancy</li>
+		<li>AR_Nemes</li>
+	</apparelRequired>
     <weaponTags>
       <li>EgyptianRoyal</li>
       <li>EgyptianHeavy</li>
