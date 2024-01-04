@@ -50,10 +50,20 @@
 				  <li>
 					<kindDef>Peaceful</kindDef>
 					<options>
-					  <AR_EPeasant>100</AR_EPeasant>
-					  <AR_Scribe>10</AR_Scribe>
-					  <AR_ESlinger>20</AR_ESlinger>
-					  <AR_ESkirmisher>20</AR_ESkirmisher>
+						<AR_EPeasant>100</AR_EPeasant>
+						<AR_Scribe>10</AR_Scribe>
+						<AR_ESlinger>20</AR_ESlinger>
+						<AR_ESkirmisher>20</AR_ESkirmisher>
+						<TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+						<TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+						<TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+						<TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+						<TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+						<TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+						<TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+						<TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+						<TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+						<TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
 					</options>
 				  </li>
 				  <li>
@@ -71,6 +81,17 @@
 						<Mercenary_Slasher>7</Mercenary_Slasher>
 						<Mercenary_Gunner>11</Mercenary_Gunner>
 						<Mercenary_Elite>15</Mercenary_Elite>
+						
+					  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+					  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+					  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+					  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+					  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+					  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+					  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+					  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+					  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+					  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
 					</options>
 				  </li>
 				  <li>
@@ -87,6 +108,17 @@
 					<Mercenary_Slasher>75</Mercenary_Slasher>
 					<Mercenary_Gunner>80</Mercenary_Gunner>
 					<Mercenary_Elite>85</Mercenary_Elite>
+					
+					  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+					  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+					  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+					  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+					  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+					  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+					  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+					  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+					  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+					  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
 					</options>
 				  </li>
 				  <li>
@@ -103,17 +135,28 @@
 					  <AEXP_Camel MayRequire="VanillaExpanded.VAEED">200</AEXP_Camel>
 					</carriers>
 					<guards>
-					  <AR_EPeasant>30</AR_EPeasant>
-					  <AR_EHeavy>50</AR_EHeavy>
-					  <AR_ESpearH>55</AR_ESpearH>
-					  <AR_EArcherH>55</AR_EArcherH>
-					  <AR_EJavelineer>50</AR_EJavelineer>
+					  <AR_EPeasant>20</AR_EPeasant>
+					  <AR_EHeavy>25</AR_EHeavy>
+					  <AR_ESpearH>25</AR_ESpearH>
+					  <AR_EArcherH>25</AR_EArcherH>
+					  <AR_EJavelineer>20</AR_EJavelineer>
 					  
 					<!-- As this society is more wealthy, it can afford mercenaries -->
-					<Grenadier_Destructive>3</Grenadier_Destructive>
-					<Mercenary_Slasher>7</Mercenary_Slasher>
-					<Mercenary_Gunner>10</Mercenary_Gunner>
-					<Mercenary_Elite>10</Mercenary_Elite>
+					<Grenadier_Destructive>13</Grenadier_Destructive>
+					<Mercenary_Slasher>17</Mercenary_Slasher>
+					<Mercenary_Gunner>20</Mercenary_Gunner>
+					<Mercenary_Elite>20</Mercenary_Elite>
+					
+          <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+		  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+		  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+		  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+		  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+          <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+          <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+          <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+		  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+		  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
 					</guards>
 				  </li>
 				  <li>
@@ -133,9 +176,20 @@
 					  <AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
 					  <Dromedary>2</Dromedary>
 					  
+					  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+					  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+					  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+					  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+					  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+					  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+					  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+					  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+					  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+					  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+					  
 						<!-- As this society is more wealthy, it can afford mercenaries -->
-						<Grenadier_Destructive>1.5</Grenadier_Destructive>
-						<Mercenary_Slasher>7</Mercenary_Slasher>
+						<Grenadier_Destructive>15</Grenadier_Destructive>
+						<Mercenary_Slasher>17</Mercenary_Slasher>
 						<Mercenary_Gunner>10</Mercenary_Gunner>
 						<Mercenary_Elite>10</Mercenary_Elite>
 					</options>
@@ -150,6 +204,16 @@
 							<Mercenary_Slasher>7</Mercenary_Slasher>
 							<Mercenary_Gunner>10</Mercenary_Gunner>
 							<Mercenary_Elite>10</Mercenary_Elite>
+							  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+							  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+							  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+							  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+							  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+							  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+							  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+							  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+							  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+							  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
 						</options>
 					</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -163,6 +227,16 @@
 							<Mercenary_Slasher>7</Mercenary_Slasher>
 							<Mercenary_Gunner>10</Mercenary_Gunner>
 							<Mercenary_Elite>10</Mercenary_Elite>
+							  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+							  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+							  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+							  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+							  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+							  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+							  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+							  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+							  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+							  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
 						</options>
 					</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -176,6 +250,16 @@
 							<Mercenary_Slasher>7</Mercenary_Slasher>
 							<Mercenary_Gunner>10</Mercenary_Gunner>
 							<Mercenary_Elite>10</Mercenary_Elite>
+							  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+							  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+							  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+							  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+							  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+							  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+							  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+							  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+							  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+							  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
 						</options>
 					</li>
 				</pawnGroupMakers>

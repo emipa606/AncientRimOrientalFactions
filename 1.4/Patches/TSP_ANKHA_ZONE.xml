@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="AC_AnkhaRace"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs</xpath>
+			<value>
+				<PawnKindDef Name="TSP_Egypt_InAnkhaZone" ParentName="PawnEgyptBase" Abstract="True">
+						<race Inherit="False">AC_AnkhaRace</race>
+						<defaultFactionType>AR_Faction_Egypt</defaultFactionType>
+						<chemicalAddictionChance>0.015</chemicalAddictionChance>
+						<initialWillRange>0.5~1</initialWillRange>
+						<initialResistanceRange>5~14</initialResistanceRange>
+						<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+						<backstoryCategories>
+							<li>Tribal</li>
+						</backstoryCategories>
+						<apparelTags>
+							<li>EgyptianBasic</li>
+						</apparelTags>
+				</PawnKindDef>
+				  <PawnKindDef Name="EgyptNoble_InAnkhaZone" ParentName="TSP_Egypt_InAnkhaZone" Abstract="True">
+						<race>AC_AnkhaRace</race>
+						<fixedGender>Female</fixedGender>
+						<minGenerationAge>22</minGenerationAge>
+						<maxGenerationAge>30</maxGenerationAge>
+						<gearHealthRange>
+						  <min>1.0</min>
+						  <max>3.0</max>
+						</gearHealthRange>
+						<apparelMoney>
+						  <min>500</min>
+						  <max>1000</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>300</min>
+						  <max>1000</max>
+						</weaponMoney>
+						<weaponTags>
+						  <li>EgyptianNoble</li>
+						</weaponTags>
+						<apparelTags>
+						  <li>EgyptianNoble</li>
+						</apparelTags>
+				  </PawnKindDef>
+				  <PawnKindDef Name="EgyptBaseFighter_InAnkhaZone" ParentName="TSP_Egypt_InAnkhaZone" Abstract="True">
+						<race>AC_AnkhaRace</race>
+						<canBeSapper>true</canBeSapper>
+						<isFighter>true</isFighter>
+						<maxGenerationAge>65</maxGenerationAge>
+						<combatPower>30</combatPower>
+						<gearHealthRange>
+						  <min>0.5</min>
+						  <max>1.0</max>
+						</gearHealthRange>
+						<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+						<apparelMoney>
+						  <min>500</min>
+						  <max>3000</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>200</min>
+						  <max>350</max>
+						</weaponMoney>
+						<techHediffsMoney>
+						  <min>200</min>
+						  <max>300</max>
+						</techHediffsMoney>
+						<techHediffsTags>
+						  <li>Simple</li>
+						</techHediffsTags>
+						<techHediffsChance>0.001</techHediffsChance>
+						<invNutrition>3.0</invNutrition>
+						<apparelTags>
+						  <li>OrientalMedium</li>
+						  <li>OrientalLight</li>
+						  <li>EgyptianLight</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+				  </PawnKindDef>
+				  <PawnKindDef Name="EgyptBaseFighterB_InAnkhaZone" ParentName="TSP_Egypt_InAnkhaZone" Abstract="True">
+						<race>AC_AnkhaRace</race>
+						<canBeSapper>true</canBeSapper>
+						<combatPower>35</combatPower>
+						<isFighter>true</isFighter>
+						<minGenerationAge>24</minGenerationAge>
+						<maxGenerationAge>55</maxGenerationAge>
+						<gearHealthRange>
+						  <min>0.75</min>
+						  <max>1.0</max>
+						</gearHealthRange>
+						<apparelMoney>
+						  <min>900</min>
+						  <max>2000</max>
+						</apparelMoney>
+						<apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
+						<weaponMoney>
+						  <min>600</min>
+						  <max>5000</max>
+						</weaponMoney>
+						<techHediffsMoney>
+						  <min>200</min>
+						  <max>800</max>
+						</techHediffsMoney>
+						<techHediffsTags>
+						  <li>Simple</li>
+						</techHediffsTags>
+						<techHediffsChance>0.001</techHediffsChance>
+						<invNutrition>3.0</invNutrition>
+						<apparelTags>
+						  <li>OrientalMedium</li>
+						  <li>OrientalHeavy</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+				  </PawnKindDef>
+				  <PawnKindDef Name="EgyptCitizen_InAnkhaZone" ParentName="TSP_Egypt_InAnkhaZone">
+						<defName>TSP_AR_EPeasant_InAnkhaZone</defName>
+						<race>AC_AnkhaRace</race>
+						<fixedGender>Female</fixedGender> <!-- Male Ankhas exist elsewhere in the code, but this is funnier -->
+						<label>miit</label>
+						<labelPlural>miu</labelPlural>
+						<combatPower>15</combatPower>
+						<itemQuality>Poor</itemQuality>
+						<isFighter>false</isFighter>
+						<initialWillRange>1~2</initialWillRange>
+						<initialResistanceRange>4~12</initialResistanceRange>
+						<gearHealthRange>
+						  <min>0.5</min>
+						  <max>2.0</max>
+						</gearHealthRange>
+						<apparelMoney>
+						  <min>250</min>
+						  <max>500</max>
+						</apparelMoney>
+						<apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+						<weaponMoney>
+						  <min>100</min>
+						  <max>750</max>
+						</weaponMoney>
+						<weaponTags>
+						  <li>NeolithicMeleeBasic</li>
+						  <li>EgyptianLight</li>
+						</weaponTags>
+						<techHediffsMoney>
+						  <min>200</min>
+						  <max>300</max>
+						</techHediffsMoney>
+						<apparelRequired>
+							<li>AR_EgyptSimple</li>
+						</apparelRequired>
+						<techHediffsTags>
+						  <li>Simple</li>
+						</techHediffsTags>
+						<techHediffsChance>0.001</techHediffsChance>
+						<invNutrition>3</invNutrition>
+						<apparelTags>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+				  </PawnKindDef>
+				  <PawnKindDef ParentName="EgyptNoble_InAnkhaZone">
+						<defName>TSP_AR_Scribe_InAnkhaZone</defName>
+						<label>miit scribe</label>
+						<labelPlural>miu scribes</labelPlural>
+						<fixedGender>Female</fixedGender> <!-- Male Ankhas exist elsewhere in the code, but this is funnier -->
+						<minGenerationAge>35</minGenerationAge>
+						<maxGenerationAge>75</maxGenerationAge>
+						<combatPower>15</combatPower>
+						<gearHealthRange>
+						  <min>1.0</min>
+						  <max>3.0</max>
+						</gearHealthRange>
+						<apparelMoney>
+						  <min>900</min>
+						  <max>3000</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>300</min>
+						  <max>500</max>
+						</weaponMoney>
+						<weaponTags>
+						  <li>EgyptianNoble</li>
+						</weaponTags>
+						<apparelRequired>
+							<li>AR_NetDress</li>
+							<li MayRequire="ludeon.rimworld.ideology">Apparel_Hood</li>
+							<li MayRequire="ludeon.rimworld.ideology">ApparelRobe</li>
+						</apparelRequired>
+						<apparelTags>
+						  <li>EgyptianNoble</li>
+						  <li>EgyptianScribe</li>
+						  <li>EgyptianAdvanced</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+				  </PawnKindDef>
+				  <PawnKindDef ParentName="EgyptNoble_InAnkhaZone">
+						<defName>TSP_AR_ETrader_InAnkhaZone</defName>
+						<label>miit merchant</label>
+						<labelPlural>miu merchants</labelPlural>
+						<fixedGender>Female</fixedGender>
+						<trader>true</trader>
+						<apparelRequired>
+						  <li>AR_EgyptFancy</li>
+						</apparelRequired>
+						<apparelMoney>
+						  <min>900</min>
+						  <max>3000</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>500</min>
+						  <max>2000</max>
+						</weaponMoney>
+						<apparelTags>
+						  <li>EgyptianNoble</li>
+						  <li>EgyptianAdvanced</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+						<weaponTags>
+						  <li>EgyptianNoble</li>
+						  <li>OrientalMedium</li>
+						</weaponTags>
+				  </PawnKindDef>
+				  <PawnKindDef ParentName="EgyptBaseFighter_InAnkhaZone">
+						<defName>TSP_AR_ELight_InAnkhaZone</defName>
+						<label>light fighter</label>
+						<canBeSapper>true</canBeSapper>
+						<apparelMoney>
+						  <min>250</min>
+						  <max>1300</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>200</min>
+						  <max>350</max>
+						</weaponMoney>
+						<weaponTags>
+						  <li>EgyptianLight</li>
+						  <li>NeolithicMeleeBasic</li>
+						</weaponTags>
+						<apparelTags>
+						  <li>OrientalLight</li>
+						  <li>EgyptianLight</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+				  </PawnKindDef>
+				  <PawnKindDef ParentName="EgyptBaseFighter_InAnkhaZone">
+						<defName>TSP_AR_ESpear_InAnkhaZone</defName>
+						<label>miit spearman</label>
+						<labelPlural>miu spearmen</labelPlural>
+						<canBeSapper>true</canBeSapper>
+						<weaponTags>
+						  <li>SpearMen</li>
+						</weaponTags>
+						<modExtensions>
+						  <li Class="PawnShields.ShieldPawnGeneratorProperties">
+							<shieldMoney>
+							  <min>100</min>
+							  <max>500</max>
+							</shieldMoney>
+							<shieldTags>
+							  <li>ShieldsOrientHeavy</li>
+							</shieldTags>
+						  </li>
+						</modExtensions>
+						<apparelMoney>
+						  <min>250</min>
+						  <max>600</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>400</min>
+						  <max>600</max>
+						</weaponMoney>
+						<apparelTags>
+						  <li>OrientalLight</li>
+						  <li>EgyptianLight</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+				  </PawnKindDef>
+				  <PawnKindDef ParentName="EgyptBaseFighter_InAnkhaZone">
+						<defName>TSP_AR_EArcher_InAnkhaZone</defName>
+						<label>miit archer</label>
+						<labelPlural>miu archers</labelPlural>
+						<weaponTags>
+						  <li>BowMen</li>
+						</weaponTags>
+						<apparelMoney>
+						  <min>350</min>
+						  <max>2000</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>400</min>
+						  <max>600</max>
+						</weaponMoney>
+						<apparelTags>
+						  <li>OrientalLight</li>
+						  <li>EgyptianLight</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+				  </PawnKindDef>
+				  <PawnKindDef ParentName="EgyptBaseFighter_InAnkhaZone">
+						<defName>TSP_AR_ESlinger_InAnkhaZone</defName>
+						<label>miit slinger</label>
+						<labelPlural>miu slingers</labelPlural>
+						<combatPower>5</combatPower>
+						<weaponTags>
+						  <li>Slinger</li>
+						</weaponTags>
+						<apparelMoney>
+						  <min>250</min>
+						  <max>3000</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>350</min>
+						  <max>600</max>
+						</weaponMoney>
+						<apparelTags>
+						  <li>OrientalLight</li>
+						  <li>EgyptianLight</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+				  </PawnKindDef>
+				  <PawnKindDef ParentName="EgyptBaseFighter_InAnkhaZone">
+						<defName>TSP_AR_ESkirmisher_InAnkhaZone</defName>
+						<label>miit skirmisher</label>
+						<labelPlural>miu skirmishers</labelPlural>
+						<weaponTags>
+						  <li>EgyptianLight</li>
+						  <li>OrientalLight</li>
+						  <li>NeolithicMeleeBasic</li>
+						  <li>NeolithicMeleeDecent</li>
+						  <li>NeolithicRangedBasic</li>
+						  <li>NeolithicRangedDecent</li>
+						  <li>MedievalMeleeBasic</li>
+						  <li>MedievalMeleeDecent</li>
+						</weaponTags>
+						<apparelMoney>
+						  <min>250</min>
+						  <max>5000</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>400</min>
+						  <max>3000</max>
+						</weaponMoney>
+						<apparelTags>
+						  <li>OrientalLight</li>
+						  <li>EgyptianLight</li>
+						  <li>OrientalMedium</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+				  </PawnKindDef>
+				  <PawnKindDef ParentName="EgyptBaseFighterB_InAnkhaZone">
+						<defName>TSP_AR_EHeavy_InAnkhaZone</defName>
+						<label>heavy miit fighter</label>
+						<labelPlural>heavy miu fighters</labelPlural>
+						<canBeSapper>true</canBeSapper>
+						<combatPower>70</combatPower>
+						<weaponTags>
+						  <li>EgyptianHeavy</li>
+						  <li>Lance</li>
+						</weaponTags>
+						<modExtensions>
+						  <li Class="PawnShields.ShieldPawnGeneratorProperties">
+							<shieldMoney>
+							  <min>100</min>
+							  <max>2000</max>
+							</shieldMoney>
+							<shieldTags>
+							  <li>ShieldsOrientHeavy</li>
+							</shieldTags>
+						  </li>
+						</modExtensions>
+						<apparelMoney>
+						  <min>500</min>
+						  <max>1000</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>500</min>
+						  <max>1500</max>
+						</weaponMoney>
+						<apparelTags>
+						  <li>OrientalMedium</li>
+						  <li>OrientalHeavy</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+				  </PawnKindDef>
+				  <PawnKindDef ParentName="EgyptBaseFighterB_InAnkhaZone">
+						<defName>TSP_AR_ESpearH_InAnkhaZone</defName>
+						<label>heavy miit spearman</label>
+						<labelPlural>heavy miu spearmen</labelPlural>
+						<canBeSapper>true</canBeSapper>
+						<combatPower>45</combatPower>
+						<weaponTags>
+						  <li>SpearMen</li>
+						  <li>Spear</li>
+						  <li>Lance</li>
+						</weaponTags>
+						<apparelMoney>
+						  <min>1500</min>
+						  <max>6000</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>900</min>
+						  <max>5000</max>
+						</weaponMoney>
+						<apparelTags>
+						  <li>OrientalMedium</li>
+						  <li>OrientalHeavy</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+						<modExtensions>
+						  <li Class="PawnShields.ShieldPawnGeneratorProperties">
+							<shieldMoney>
+							  <min>100</min>
+							  <max>500</max>
+							</shieldMoney>
+							<shieldTags>
+							  <li>ShieldsOrientHeavy</li>
+							</shieldTags>
+						  </li>
+						</modExtensions>
+					  </PawnKindDef>
+					  <PawnKindDef ParentName="EgyptBaseFighterB_InAnkhaZone">
+						<defName>TSP_AR_EArcherH_InAnkhaZone</defName>
+						<label>heavy miit archer</label>
+						<labelPlural>heavy miu archers</labelPlural>
+						<combatPower>80</combatPower>
+						<weaponTags>
+						  <li>NeolithicRangedDecent</li>
+						  <li>NeolithicRangedAdvanced</li>
+						  <li>MedievalRangedDecent</li>
+						  <li>MedievalRangedAdvanced</li>
+						</weaponTags>
+						<apparelMoney>
+						  <min>500</min>
+						  <max>3000</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>900</min>
+						  <max>5000</max>
+						</weaponMoney>
+						<apparelTags>
+						  <li>OrientalMedium</li>
+						  <li>OrientalHeavy</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+					  </PawnKindDef>
+					  <PawnKindDef ParentName="EgyptBaseFighterB_InAnkhaZone">
+						<defName>TSP_AR_EJavelineer_InAnkhaZone</defName>
+						<label>Javelineer</label>
+						<combatPower>50</combatPower>
+						<fixedGender>Female</fixedGender>
+						<apparelRequired>
+							<li>AR_EgyptSimple</li>
+						</apparelRequired>
+						<weaponTags>
+						  <li>Javeliner</li>
+						</weaponTags>
+						<apparelMoney>
+						  <min>250</min>
+						  <max>3000</max>
+						</apparelMoney>
+						<weaponMoney>
+						  <min>1000</min>
+						  <max>3000</max>
+						</weaponMoney>
+						<apparelTags>
+						  <li>OrientalMedium</li>
+						  <li>OrientalHeavy</li>
+						  <li>EgyptianBasic</li>
+						</apparelTags>
+				  </PawnKindDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>
