@@ -119,7 +119,7 @@
       <max>2.0</max>
     </gearHealthRange>
     <apparelMoney>
-      <min>150</min>
+      <min>285</min>
       <max>500</max>
     </apparelMoney>
     <apparelAllowHeadgearChance>0.25</apparelAllowHeadgearChance>
@@ -140,7 +140,7 @@
     </techHediffsTags>
     <techHediffsChance>0.001</techHediffsChance>
     <invNutrition>3</invNutrition>
-    <apparelTags>
+    <apparelTags Inherit="False">
       <li>EgyptianBasic</li>
     </apparelTags>
   </PawnKindDef>

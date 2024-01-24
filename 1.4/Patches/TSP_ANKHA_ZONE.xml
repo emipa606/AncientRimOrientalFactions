@@ -133,7 +133,7 @@
 						  <max>2.0</max>
 						</gearHealthRange>
 						<apparelMoney>
-						  <min>250</min>
+						  <min>280</min>
 						  <max>500</max>
 						</apparelMoney>
 						<apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
@@ -202,6 +202,7 @@
 						<labelPlural>miu merchants</labelPlural>
 						<fixedGender>Female</fixedGender>
 						<trader>true</trader>
+						<combatPower>42</combatPower>
 						<apparelRequired>
 						  <li>AR_EgyptFancy</li>
 						</apparelRequired>
@@ -448,7 +449,8 @@
 					  </PawnKindDef>
 					  <PawnKindDef ParentName="EgyptBaseFighterB_InAnkhaZone">
 						<defName>TSP_AR_EJavelineer_InAnkhaZone</defName>
-						<label>Javelineer</label>
+						<label>miit javelineer</label>
+						<label>miu javelineers</label>
 						<combatPower>50</combatPower>
 						<fixedGender>Female</fixedGender>
 						<apparelRequired>
