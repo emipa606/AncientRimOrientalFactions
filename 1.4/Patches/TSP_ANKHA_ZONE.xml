@@ -16,6 +16,7 @@
 						<initialWillRange>0.5~1</initialWillRange>
 						<initialResistanceRange>5~14</initialResistanceRange>
 						<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+						<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 						<backstoryCategories>
 							<li>Tribal</li>
 						</backstoryCategories>

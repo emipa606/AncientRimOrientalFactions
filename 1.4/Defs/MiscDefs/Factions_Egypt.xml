@@ -61,7 +61,7 @@
       <li>Caravan_Neolithic_WarMerchant</li>
       <li>Caravan_Neolithic_Slaver</li>
       <li>Caravan_Neolithic_ShamanMerchant</li>
-      <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
+      <!-- <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li> -->
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>

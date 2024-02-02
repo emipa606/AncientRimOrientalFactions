@@ -6,6 +6,7 @@
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>25~44</initialResistanceRange>
     <backstoryCryptosleepCommonality>0.001</backstoryCryptosleepCommonality>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <backstoryCategories>
       <li>Tribal</li>
     </backstoryCategories>
@@ -448,10 +449,11 @@
     <factionLeader>true</factionLeader>
     <minGenerationAge>18</minGenerationAge>
     <maxGenerationAge>50</maxGenerationAge>
-    <backstoryCryptosleepCommonality>0.15</backstoryCryptosleepCommonality>
+    <backstoryCryptosleepCommonality>0.33</backstoryCryptosleepCommonality>
     <itemQuality>Legendary</itemQuality>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <biocodeWeaponChance Inherit="False">0.9</biocodeWeaponChance>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <gearHealthRange>
       <min>1.5</min>
       <max>3.0</max>
