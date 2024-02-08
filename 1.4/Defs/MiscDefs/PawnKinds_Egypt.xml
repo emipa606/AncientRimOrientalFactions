@@ -154,7 +154,7 @@
     <combatPower>15</combatPower>
     <apparelRequired>
       <li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
-	  <li MayRequire="ludeon.rimworld.ideology">Apparel_Hood</li>
+	  <li MayRequire="ludeon.rimworld.ideology">Apparel_HatHood</li>
     </apparelRequired>
     <gearHealthRange>
       <min>1.0</min>

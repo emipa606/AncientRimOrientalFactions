@@ -187,7 +187,7 @@
 						</weaponTags>
 						<apparelRequired>
 							<li>AR_NetDress</li>
-							<li MayRequire="ludeon.rimworld.ideology">Apparel_Hood</li>
+							<li MayRequire="ludeon.rimworld.ideology">Apparel_HatHood</li>
 							<li MayRequire="ludeon.rimworld.ideology">ApparelRobe</li>
 						</apparelRequired>
 						<apparelTags>

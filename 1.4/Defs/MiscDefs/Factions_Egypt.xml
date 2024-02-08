@@ -245,7 +245,7 @@
         <kindDef>Trader</kindDef>
         <traders>
 			<AR_ETrader>1</AR_ETrader>
-			<TSP_AR_ETrader_InAnkhaZone>1</TSP_AR_ETrader_InAnkhaZone>
+			<TSP_AR_ETrader_InAnkhaZone MayRequire="razar1.ankharace">1</TSP_AR_ETrader_InAnkhaZone>
         </traders>
         <carriers>
 			<Muffalo>1</Muffalo>
