@@ -242,7 +242,7 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentIndustrial</thingDef>
 		<price>Expensive</price>
-        <countRange>2~7</countRange>
+        <countRange>9~17</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>WoodLog</thingDef>
@@ -266,7 +266,7 @@
         <countChances>
           <li>
             <count>3</count>
-            <chance>0.5</chance>
+            <chance>0.25</chance>
           </li>
           <li>
             <count>4</count>
@@ -274,11 +274,11 @@
           </li>
           <li>
             <count>5</count>
-            <chance>0.85</chance>
+            <chance>1</chance>
           </li>
           <li>
             <count>6</count>
-            <chance>0.4</chance>
+            <chance>0.55</chance>
           </li>
           <li>
             <count>7</count>
@@ -533,6 +533,7 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>Beer</thingDef>
+		<price>Cheap</price>
         <countRange>30~60</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -554,6 +555,7 @@
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>
         <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+		<maxTechLevelBuy>Ultra</maxTechLevelBuy>
         <thingDefCountRange>1~5</thingDefCountRange>
         <totalPriceRange>300~1000</totalPriceRange>
       </li>
@@ -563,11 +565,11 @@
         <countChances>
           <li>
             <count>2</count>
-            <chance>1.2</chance>
+            <chance>1</chance>
           </li>
           <li>
             <count>3</count>
-            <chance>0.4</chance>
+            <chance>0.66</chance>
           </li>
           <li>
             <count>4</count>
@@ -709,7 +711,7 @@
         <countChances>
           <li>
             <count>2</count>
-            <chance>1</chance>
+            <chance>2</chance>
           </li>
           <li>
             <count>3</count>
@@ -769,7 +771,6 @@
 	  
       <li Class="StockGenerator_SingleDef" MayRequire="sarg.alphamemes">
         <thingDef MayRequire="sarg.alphamemes">AM_BlocksPristineLimestone</thingDef>
-		<price>Cheap</price>
         <countRange MayRequire="sarg.alphamemes">300~500</countRange>
       </li>
 	  
@@ -901,28 +902,30 @@
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>
         <maxTechLevelGenerate>Neolithic</maxTechLevelGenerate>
+		<maxTechLevelBuy>Archotech</maxTechLevelBuy>
         <thingDefCountRange>1~15</thingDefCountRange>
         <totalPriceRange>400~2000</totalPriceRange>
       </li>
 
       <!-- Techprints -->
       <li Class="StockGenerator_Techprints">
+		<price>Expensive</price>
         <countChances>
           <li>
             <count>3</count>
-            <chance>1.5</chance>
+            <chance>0.15</chance>
           </li>
           <li>
             <count>4</count>
-            <chance>0.1</chance>
+            <chance>0.25</chance>
           </li>
           <li>
             <count>5</count>
-            <chance>0.1</chance>
+            <chance>1</chance>
           </li>
 		  <li>
             <count>6</count>
-            <chance>0.12</chance>
+            <chance>1</chance>
           </li>
 		  <li>
             <count>7</count>
@@ -1003,6 +1006,7 @@
 	  
       <li Class="StockGenerator_SingleDef">
         <thingDef>Cloth</thingDef>
+		<price>Cheap</price>
         <countRange>3000~5000</countRange>
       </li>
 	  
