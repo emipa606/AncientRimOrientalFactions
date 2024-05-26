@@ -13,6 +13,7 @@
     <race>Human</race>
     <apparelTags Inherit="False">
       <li>EgyptianBasic</li>
+	  <li>EgyptDress</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef Name="EgyptNoble" ParentName="EgyptCitizen" Abstract="True">
@@ -131,6 +132,7 @@
     <weaponTags>
       <li>NeolithicMeleeBasic</li>
       <li>EgyptianLight</li>
+	  <li>Toolagri</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
