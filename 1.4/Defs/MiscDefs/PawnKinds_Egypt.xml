@@ -283,7 +283,7 @@
     <defName>AR_ESlinger</defName>
     <label>Egyptian slinger</label>
     <combatPower>5</combatPower>
-    <weaponTags>
+    <weaponTags Inherit="False">
       <li>Slinger</li>
     </weaponTags>
     <apparelMoney>
