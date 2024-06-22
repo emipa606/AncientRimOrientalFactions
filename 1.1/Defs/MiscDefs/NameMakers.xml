@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <RulePackDef>
     <defName>NamerPersonEgypt</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt;[NamesEgypt] of [NamesEgypt]</li>
-        <li>name-&gt;[NamesEgypt] [NamesEgypt]</li>
-        <li>name-&gt;[NamesEgypt] the [Numbers].</li>
+        <li>name->[NamesEgypt] of [NamesEgypt]</li>
+        <li>name->[NamesEgypt] [NamesEgypt]</li>
+        <li>name->[NamesEgypt] the [Numbers].</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -24,7 +24,7 @@
     <defName>NamerFactionBaseEgypt</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt;[NamesEgypt]</li>
+        <li>name->[NamesEgypt]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -38,11 +38,11 @@
     <defName>NamerFactionEgypt</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt; Kemet</li>
-        <li>name-&gt; Aegyptus</li>
-        <li>name-&gt; Pharaonic Empire</li>
-        <li>name-&gt; Black Lands</li>
-        <li>name-&gt; Egypt</li>
+        <li>name-> Kemet</li>
+        <li>name-> Aegyptus</li>
+        <li>name-> Pharaonic Empire</li>
+        <li>name-> Black Lands</li>
+        <li>name-> Egypt</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <RulePackDef>
     <defName>NamerPersonEgypt</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt;[NamesEgypt] of [NamesEgypt]</li>
-        <li>name-&gt;[NamesEgypt] [NamesEgypt]</li>
-        <li>name-&gt;[NamesEgypt] the [Numbers]</li>
+        <li>name->[NamesEgypt] of [NamesEgypt]</li>
+        <li>name->[NamesEgypt] [NamesEgypt]</li>
+        <li>name->[NamesEgypt] the [Numbers]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -24,7 +24,7 @@
     <defName>NamerSettlementEgypt</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt;[NamesEgypt]</li>
+        <li>name->[NamesEgypt]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -38,15 +38,15 @@
     <defName>NamerFactionEgypt</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt; Kemet</li>
-        <li>name-&gt; Aegyptus</li>
-        <li>name-&gt; Pharaonic Empire</li>
-        <li>name-&gt; Black Lands</li>
-        <li>name-&gt; Egypt</li>
-        <li>name-&gt; Ju Ahet</li>
-        <li>name-&gt; Ptolomey Land</li>
-        <li>name-&gt; Thirty-Fifth Dynasty</li>
-        <li>name-&gt; Thirty-Fifth Dynasty of Egypt</li>
+        <li>name-> Kemet</li>
+        <li>name-> Aegyptus</li>
+        <li>name-> Pharaonic Empire</li>
+        <li>name-> Black Lands</li>
+        <li>name-> Egypt</li>
+        <li>name-> Ju Ahet</li>
+        <li>name-> Ptolomey Land</li>
+        <li>name-> Thirty-Fifth Dynasty</li>
+        <li>name-> Thirty-Fifth Dynasty of Egypt</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
