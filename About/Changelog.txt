@@ -1,5 +1,8 @@
 # Changelog for AncientRimOrientalFactions
 
+1.5.0 - Updated for 1.5
+
+
 1.4.5 - The Egyptian empire will now correctly give access to tech-prints
 
 

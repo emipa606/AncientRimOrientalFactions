@@ -7,7 +7,7 @@
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef" MayRequire="sarg.alphamemes">
         <thingDef MayRequire="sarg.alphamemes">AM_BlocksPristineLimestone</thingDef>
-        <countRange MayRequire="sarg.alphamemes">20~100</countRange>
+        <countRange MayRequire="sarg.alphamemes">20~200</countRange>
       </li>
     </stockGenerators>
   </TraderKindDef>
