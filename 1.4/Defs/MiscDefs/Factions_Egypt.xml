@@ -149,11 +149,11 @@
       <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Approved</li>
       <!-- For some reason, the game eliminates the entire Precept category when generating Egypt if this exists in the code -->
       <!-- <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Respected</li> -->
-      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_AlienSlavery_Abhorrent</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_AlienSlavery_Horrible</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_AlienSlavery_Disapproved</li>
       <!-- For some reason, the game eliminates the entire Precept category when generating Egypt if this exists in the code -->
-      <!-- <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Acceptable</li> -->
+      <!-- <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_AlienSlavery_Acceptable</li> -->
     </disallowedPrecepts>
     <pawnGroupMakers>
       <li>
@@ -299,8 +299,8 @@
 			<AR_EArcherH>50</AR_EArcherH>
 			<AR_EJavelineer>50</AR_EJavelineer>
 			<AR_Pharao>8</AR_Pharao>
-			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
 			<Dromedary>2</Dromedary>
+			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
 			<TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EPeasant_InAnkhaZone>
 			<TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ELight_InAnkhaZone>
 			<TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESpear_InAnkhaZone>
@@ -313,6 +313,6 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <settlementTexturePath>Icon/EgyptianCulture</settlementTexturePath>
   </FactionDef>
 </Defs>
