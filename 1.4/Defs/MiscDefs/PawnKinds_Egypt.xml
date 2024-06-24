@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <PawnKindDef Name="PawnEgyptBase" Abstract="True">
     <defaultFactionType>AR_Faction_Egypt</defaultFactionType>
@@ -6,14 +6,12 @@
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>25~44</initialResistanceRange>
     <backstoryCryptosleepCommonality>0.001</backstoryCryptosleepCommonality>
-	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <backstoryCategories>
       <li>Tribal</li>
     </backstoryCategories>
     <race>Human</race>
-    <apparelTags Inherit="False">
+    <apparelTags>
       <li>EgyptianBasic</li>
-	  <li>EgyptDress</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef Name="EgyptNoble" ParentName="EgyptCitizen" Abstract="True">
@@ -121,7 +119,7 @@
       <max>2.0</max>
     </gearHealthRange>
     <apparelMoney>
-      <min>285</min>
+      <min>150</min>
       <max>500</max>
     </apparelMoney>
     <apparelAllowHeadgearChance>0.25</apparelAllowHeadgearChance>
@@ -132,7 +130,6 @@
     <weaponTags>
       <li>NeolithicMeleeBasic</li>
       <li>EgyptianLight</li>
-	  <li>Toolagri</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -143,7 +140,7 @@
     </techHediffsTags>
     <techHediffsChance>0.001</techHediffsChance>
     <invNutrition>3</invNutrition>
-    <apparelTags Inherit="False">
+    <apparelTags>
       <li>EgyptianBasic</li>
     </apparelTags>
   </PawnKindDef>
@@ -155,8 +152,7 @@
     <maxGenerationAge>75</maxGenerationAge>
     <combatPower>15</combatPower>
     <apparelRequired>
-      <li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
-	  <li MayRequire="ludeon.rimworld.ideology">Apparel_HatHood</li>
+      <li>Apparel_Robe</li>
     </apparelRequired>
     <gearHealthRange>
       <min>1.0</min>
@@ -185,7 +181,7 @@
     <labelPlural>Nile tradesmen</labelPlural>
     <trader>true</trader>
     <apparelRequired>
-      <li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
+      <li>Apparel_Robe</li>
     </apparelRequired>
     <apparelMoney>
       <min>900</min>
@@ -283,7 +279,7 @@
     <defName>AR_ESlinger</defName>
     <label>Egyptian slinger</label>
     <combatPower>5</combatPower>
-    <weaponTags Inherit="False">
+    <weaponTags>
       <li>Slinger</li>
     </weaponTags>
     <apparelMoney>
@@ -427,7 +423,6 @@
     <combatPower>50</combatPower>
     <weaponTags>
       <li>Javeliner</li>
-	  <li>Javelineer</li>
     </weaponTags>
     <apparelMoney>
       <min>250</min>
@@ -446,46 +441,10 @@
   <PawnKindDef Name="Pharaoh" ParentName="EgyptNoble">
     <defName>AR_Pharao</defName>
     <label>Pharaoh</label>
-	<fixedGender>Male</fixedGender>
     <combatPower>100</combatPower>
     <factionLeader>true</factionLeader>
     <minGenerationAge>18</minGenerationAge>
-    <maxGenerationAge>50</maxGenerationAge>
-    <backstoryCryptosleepCommonality>0.33</backstoryCryptosleepCommonality>
-    <itemQuality>Legendary</itemQuality>
-    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-    <biocodeWeaponChance Inherit="False">0.9</biocodeWeaponChance>
-	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-    <gearHealthRange>
-      <min>1.5</min>
-      <max>3.0</max>
-    </gearHealthRange>
-    <apparelMoney>
-      <min>9000</min>
-      <max>18000</max>
-    </apparelMoney>
-    <weaponMoney>
-      <min>5000</min>
-      <max>10000</max>
-    </weaponMoney>
-    <weaponTags>
-      <li>EgyptianRoyal</li>
-      <li>EgyptianHeavy</li>
-      <li>OrientalHeavy</li>
-    </weaponTags>
-    <apparelTags>
-      <li>EgyptianNoble</li>
-      <li>EgyptianRoyal</li>
-    </apparelTags>
-  </PawnKindDef>
-  <PawnKindDef ParentName="Pharaoh">
-    <defName>TSP_AR_Cleopatra</defName>
-    <label>Pharaoh</label>
-	<fixedGender>Female</fixedGender>
-    <combatPower>70</combatPower>
-    <factionLeader>true</factionLeader>
-    <minGenerationAge>22</minGenerationAge>
-    <maxGenerationAge>31</maxGenerationAge>
+    <maxGenerationAge>100</maxGenerationAge>
     <backstoryCryptosleepCommonality>0.15</backstoryCryptosleepCommonality>
     <itemQuality>Legendary</itemQuality>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -502,10 +461,6 @@
       <min>5000</min>
       <max>10000</max>
     </weaponMoney>
-	<apparelRequired>
-		<li>AR_EgyptFancy</li>
-		<li>AR_Nemes</li>
-	</apparelRequired>
     <weaponTags>
       <li>EgyptianRoyal</li>
       <li>EgyptianHeavy</li>

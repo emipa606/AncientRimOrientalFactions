@@ -29,15 +29,15 @@
     </colorSpectrum>
     <apparelStuffFilter>
       <thingDefs>
-		<li>AR_Copper</li>
-		<li MayRequire="tsp.isengriff.bronzecoppertin_split">ST_Copper</li>
-		<li>AR_Iron</li>
-		<li>AR_Bronze</li>
-        <li MayRequore="TSP.Isengriff.Storytime">Leather_Jeub</li>
+        <li>AR_Copper</li>
+        <li MayRequire="tsp.isengriff.bronzecoppertin_split">ST_Copper</li>
+        <li>AR_Iron</li>
+        <li>AR_Bronze</li>
+        <li MayRequire="TSP.Isengriff.Storytime">Leather_Jeub</li>
         <li MayRequire="tsp.isengriff.bronzecoppertin_split">ST_Tin</li>
         <li>Plasteel</li>
       </thingDefs>
-	  <!--
+      <!--
       <stuffCategoriesToAllow>
         <li>Woody</li>
         <li>Metallic</li>
@@ -49,9 +49,9 @@
       <disallowedThingDefs>
         <li>Steel</li>
         <li>Plasteel</li>
-		<li>Uranium</li>
-		<li>Synthread</li>
-		<li>Hyperweave</li>
+        <li>Uranium</li>
+        <li>Synthread</li>
+        <li>Hyperweave</li>
       </disallowedThingDefs>
     </apparelStuffFilter>
     <factionNameMaker>NamerFactionEgypt</factionNameMaker>
@@ -74,19 +74,19 @@
       <li>TSP_AR_EgyptNormal</li>
       <li>TSP_AR_EgyptArms</li>
       <li>Caravan_Neolithic_Slaver</li>
-	  <li>TSP_AR_EgyptDealer_TechPrints</li>
-	  <li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Mining</li>
-	  <li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Textiles</li>
+      <li>TSP_AR_EgyptDealer_TechPrints</li>
+      <li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Mining</li>
+      <li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Textiles</li>
       <!-- <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li> -->
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
-	  <li>TSP_AR_AM_TechPrint_Caravan_Visitor</li>
+      <li>TSP_AR_AM_TechPrint_Caravan_Visitor</li>
       <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
     </visitorTraderKinds>
     <baseTraderKinds>
       <li>TSP_AR_EgyptNormal_Base</li>
-	  <li>TSP_AR_EgyptDealer_TechPrints_Base</li>
+      <li>TSP_AR_EgyptDealer_TechPrints_Base</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>
       <min>-999</min>
@@ -158,27 +158,27 @@
     <pawnGroupMakers>
       <li>
         <kindDef>Peaceful</kindDef>
-		<commonality>85</commonality>
+        <commonality>85</commonality>
         <options>
           <AR_EPeasant>75</AR_EPeasant>
           <AR_Scribe>10</AR_Scribe>
           <AR_ESlinger>20</AR_ESlinger>
           <AR_ESkirmisher>20</AR_ESkirmisher>
           <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
-		  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
-		  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
-		  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
-		  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+          <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+          <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+          <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+          <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
           <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
           <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
           <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
-		  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
-		  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+          <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+          <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
         </options>
       </li>
       <li>
         <kindDef>Peaceful</kindDef>
-		<commonality>100</commonality>
+        <commonality>100</commonality>
         <options>
           <AR_EPeasant>100</AR_EPeasant>
           <AR_Scribe>10</AR_Scribe>
@@ -188,128 +188,126 @@
       </li>
       <li>
         <kindDef>Peaceful</kindDef>
-		<commonality>50</commonality>
+        <commonality>50</commonality>
         <options>
           <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_EPeasant_InAnkhaZone>
-		  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
-		  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
-		  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
-		  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+          <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+          <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+          <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+          <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
           <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">10</TSP_AR_Scribe_InAnkhaZone>
           <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">7</TSP_AR_ESlinger_InAnkhaZone>
           <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
-		  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
-		  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+          <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+          <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
         </options>
       </li>
       <li>
         <kindDef>Combat</kindDef>
-		<commonality>100</commonality>
+        <commonality>100</commonality>
         <options>
-			<AR_ELight>50</AR_ELight>
-			<AR_ESpear>50</AR_ESpear>
-			<AR_EArcher>50</AR_EArcher>
-			<AR_ESlinger>50</AR_ESlinger>
-			<AR_ESkirmisher>50</AR_ESkirmisher>
-			<AR_Pharao>15</AR_Pharao>
-
-			<TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ELight_InAnkhaZone>
-			<TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ESpear_InAnkhaZone>
-			<TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_EArcher_InAnkhaZone>
-			<TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ESlinger_InAnkhaZone>
-			<TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ESkirmisher_InAnkhaZone>
-			<TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">30</TSP_AR_EJavelineer_InAnkhaZone>
-			<Dromedary>2</Dromedary>
-			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
+          <AR_ELight>50</AR_ELight>
+          <AR_ESpear>50</AR_ESpear>
+          <AR_EArcher>50</AR_EArcher>
+          <AR_ESlinger>50</AR_ESlinger>
+          <AR_ESkirmisher>50</AR_ESkirmisher>
+          <AR_Pharao>15</AR_Pharao>
+          <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ELight_InAnkhaZone>
+          <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ESpear_InAnkhaZone>
+          <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_EArcher_InAnkhaZone>
+          <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ESlinger_InAnkhaZone>
+          <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ESkirmisher_InAnkhaZone>
+          <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">30</TSP_AR_EJavelineer_InAnkhaZone>
+          <Dromedary>2</Dromedary>
+          <AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
         </options>
       </li>
       <li>
         <kindDef>Combat</kindDef>
-		<commonality>100</commonality>
+        <commonality>100</commonality>
         <options>
-			<AR_EHeavy>250</AR_EHeavy>
-			<AR_ESpearH>250</AR_ESpearH>
-			<AR_EArcherH>250</AR_EArcherH>
-			<AR_EJavelineer>250</AR_EJavelineer>
-			<AR_Pharao>50</AR_Pharao>
-
-			<TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EHeavy_InAnkhaZone>
-			<TSP_AR_ESpearH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESpearH_InAnkhaZone>
-			<TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcherH_InAnkhaZone>
-			<TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EJavelineer_InAnkhaZone>
-			<Dromedary>2</Dromedary>
-			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
+          <AR_EHeavy>250</AR_EHeavy>
+          <AR_ESpearH>250</AR_ESpearH>
+          <AR_EArcherH>250</AR_EArcherH>
+          <AR_EJavelineer>250</AR_EJavelineer>
+          <AR_Pharao>50</AR_Pharao>
+          <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EHeavy_InAnkhaZone>
+          <TSP_AR_ESpearH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESpearH_InAnkhaZone>
+          <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcherH_InAnkhaZone>
+          <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EJavelineer_InAnkhaZone>
+          <Dromedary>2</Dromedary>
+          <AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
         </options>
       </li>
-	  <li MayRequire="razar1.ankharace">
-		<kindDef>Combat</kindDef>
-		<commonality>50</commonality>
-		<options>
-			<TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EPeasant_InAnkhaZone>
-			<TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ELight_InAnkhaZone>
-			<TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESpear_InAnkhaZone>
-			<TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcher_InAnkhaZone>
-			<TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcherH_InAnkhaZone>
-			<TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESlinger_InAnkhaZone>
-			<TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESkirmisher_InAnkhaZone>
-			<TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EHeavy_InAnkhaZone>
-			<TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">60</TSP_AR_EJavelineer_InAnkhaZone>
-			<Dromedary>2</Dromedary>
-			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
-		</options>
-	  </li>
+      <li MayRequire="razar1.ankharace">
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+        <options>
+          <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EPeasant_InAnkhaZone>
+          <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ELight_InAnkhaZone>
+          <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESpear_InAnkhaZone>
+          <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcher_InAnkhaZone>
+          <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcherH_InAnkhaZone>
+          <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESlinger_InAnkhaZone>
+          <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESkirmisher_InAnkhaZone>
+          <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EHeavy_InAnkhaZone>
+          <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">60</TSP_AR_EJavelineer_InAnkhaZone>
+          <Dromedary>2</Dromedary>
+          <AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
+        </options>
+      </li>
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-			<AR_ETrader>1</AR_ETrader>
-			<TSP_AR_ETrader_InAnkhaZone MayRequire="razar1.ankharace">1</TSP_AR_ETrader_InAnkhaZone>
+          <AR_ETrader>1</AR_ETrader>
+          <TSP_AR_ETrader_InAnkhaZone MayRequire="razar1.ankharace">1</TSP_AR_ETrader_InAnkhaZone>
         </traders>
         <carriers>
-			<Muffalo>1</Muffalo>
-			<Dromedary>999</Dromedary>
-			<Alpaca>1</Alpaca>
-			<Elephant>50</Elephant>
-			<!-- If you have the Desert Expanded Mod, MORE CAMELS -->
-			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">999</AEXP_Camel>
+          <Muffalo>1</Muffalo>
+          <Dromedary>999</Dromedary>
+          <Alpaca>1</Alpaca>
+          <Elephant>50</Elephant>
+          <!-- If you have the Desert Expanded Mod, MORE CAMELS -->
+          <AEXP_Camel MayRequire="VanillaExpanded.VAEED">999</AEXP_Camel>
         </carriers>
         <guards>
-			<AR_EPeasant>30</AR_EPeasant>
-			<AR_EHeavy>50</AR_EHeavy>
-			<AR_ESpearH>55</AR_ESpearH>
-			<AR_EArcherH>55</AR_EArcherH>
-			<AR_EJavelineer>50</AR_EJavelineer>
-			<AR_ETrader>10</AR_ETrader>
-			<TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">55</TSP_AR_EArcherH_InAnkhaZone>
-			<TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">10</TSP_AR_Scribe_InAnkhaZone>
-			<Dromedary>3</Dromedary>
-			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
+          <AR_EPeasant>30</AR_EPeasant>
+          <AR_EHeavy>50</AR_EHeavy>
+          <AR_ESpearH>55</AR_ESpearH>
+          <AR_EArcherH>55</AR_EArcherH>
+          <AR_EJavelineer>50</AR_EJavelineer>
+          <AR_ETrader>10</AR_ETrader>
+          <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">55</TSP_AR_EArcherH_InAnkhaZone>
+          <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">10</TSP_AR_Scribe_InAnkhaZone>
+          <Dromedary>3</Dromedary>
+          <AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
         </guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-			<AR_EPeasant>75</AR_EPeasant>
-			<AR_ELight>50</AR_ELight>
-			<AR_ESpear>50</AR_ESpear>
-			<AR_EArcher>50</AR_EArcher>
-			<AR_ESlinger>50</AR_ESlinger>
-			<AR_ESkirmisher>50</AR_ESkirmisher>
-			<AR_EHeavy>50</AR_EHeavy>
-			<AR_ESpearH>50</AR_ESpearH>
-			<AR_EArcherH>50</AR_EArcherH>
-			<AR_EJavelineer>50</AR_EJavelineer>
-			<AR_Pharao>8</AR_Pharao>
-			<Dromedary>2</Dromedary>
-			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
-			<TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EPeasant_InAnkhaZone>
-			<TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ELight_InAnkhaZone>
-			<TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESpear_InAnkhaZone>
-			<TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcher_InAnkhaZone>
-			<TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcherH_InAnkhaZone>
-			<TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESlinger_InAnkhaZone>
-			<TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESkirmisher_InAnkhaZone>
-			<TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EHeavy_InAnkhaZone>
-			<TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">60</TSP_AR_EJavelineer_InAnkhaZone>
+          <AR_EPeasant>75</AR_EPeasant>
+          <AR_ELight>50</AR_ELight>
+          <AR_ESpear>50</AR_ESpear>
+          <AR_EArcher>50</AR_EArcher>
+          <AR_ESlinger>50</AR_ESlinger>
+          <AR_ESkirmisher>50</AR_ESkirmisher>
+          <AR_EHeavy>50</AR_EHeavy>
+          <AR_ESpearH>50</AR_ESpearH>
+          <AR_EArcherH>50</AR_EArcherH>
+          <AR_EJavelineer>50</AR_EJavelineer>
+          <AR_Pharao>8</AR_Pharao>
+          <Dromedary>2</Dromedary>
+          <AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
+          <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EPeasant_InAnkhaZone>
+          <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ELight_InAnkhaZone>
+          <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESpear_InAnkhaZone>
+          <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcher_InAnkhaZone>
+          <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcherH_InAnkhaZone>
+          <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESlinger_InAnkhaZone>
+          <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESkirmisher_InAnkhaZone>
+          <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EHeavy_InAnkhaZone>
+          <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">60</TSP_AR_EJavelineer_InAnkhaZone>
         </options>
       </li>
     </pawnGroupMakers>
