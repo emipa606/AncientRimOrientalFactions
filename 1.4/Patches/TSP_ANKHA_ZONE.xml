@@ -12,7 +12,7 @@
 				<PawnKindDef Name="TSP_Egypt_InAnkhaZone" ParentName="PawnEgyptBase" Abstract="True">
 						<race Inherit="False">AC_AnkhaRace</race>
 						<defaultFactionType>AR_Faction_Egypt</defaultFactionType>
-						<chemicalAddictionChance>0.015</chemicalAddictionChance>
+						<chemicalAddictionChance>0.02</chemicalAddictionChance>
 						<initialWillRange>0.5~1</initialWillRange>
 						<initialResistanceRange>5~14</initialResistanceRange>
 						<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
@@ -23,6 +23,20 @@
 						<apparelTags>
 							<li>EgyptianBasic</li>
 						</apparelTags>
+						<modExtensions>
+						  <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools" Inherit="False">
+							<shieldMoney MayRequire="jecrell.jecstools" Inherit="False">
+							  <min>100</min>
+							  <max>500</max>
+							</shieldMoney>
+							<shieldTags MayRequire="jecrell.jecstools" Inherit="False">
+							  <li>ShieldsOrientLight</li>
+							  <li>ShieldsOrientHeavy</li>
+							  <li>ShieldsNubian</li>
+							  <li>ShieldAnkhah</li>
+							</shieldTags>
+						  </li>
+						</modExtensions>
 				</PawnKindDef>
 				  <PawnKindDef Name="EgyptNoble_InAnkhaZone" ParentName="TSP_Egypt_InAnkhaZone" Abstract="True">
 						<race>AC_AnkhaRace</race>
@@ -224,7 +238,6 @@
 						<weaponTags>
 						  <li>EgyptianNoble</li>
 						  <li>OrientalMedium</li>
-						  <li>ShieldAnkhah</li>
 						</weaponTags>
 				  </PawnKindDef>
 				  <PawnKindDef ParentName="EgyptBaseFighter_InAnkhaZone">
@@ -249,20 +262,6 @@
 						  <li>EgyptianLight</li>
 						  <li>EgyptianBasic</li>
 						</apparelTags>
-						<modExtensions>
-						  <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
-							<shieldMoney MayRequire="jecrell.jecstools">
-							  <min>100</min>
-							  <max>500</max>
-							</shieldMoney>
-							<shieldTags MayRequire="jecrell.jecstools">
-							  <li>ShieldsOrientLight</li>
-							  <li>ShieldsOrientHeavy</li>
-							  <li>ShieldsNubian</li>
-							  <li>ShieldAnkhah</li>
-							</shieldTags>
-						  </li>
-						</modExtensions>
 				  </PawnKindDef>
 				  <PawnKindDef ParentName="EgyptBaseFighter_InAnkhaZone">
 						<defName>TSP_AR_ESpear_InAnkhaZone</defName>
@@ -272,18 +271,6 @@
 						<weaponTags>
 						  <li>SpearMen</li>
 						</weaponTags>
-						<modExtensions>
-						  <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
-							<shieldMoney MayRequire="jecrell.jecstools">
-							  <min>100</min>
-							  <max>500</max>
-							</shieldMoney>
-							<shieldTags MayRequire="jecrell.jecstools">
-							  <li>ShieldsOrientHeavy</li>
-							  <li>ShieldAnkhah</li>
-							</shieldTags>
-						  </li>
-						</modExtensions>
 						<apparelMoney>
 						  <min>250</min>
 						  <max>600</max>
@@ -380,18 +367,6 @@
 						  <li>EgyptianHeavy</li>
 						  <li>Lance</li>
 						</weaponTags>
-						<modExtensions>
-						  <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
-							<shieldMoney MayRequire="jecrell.jecstools">
-							  <min>100</min>
-							  <max>2000</max>
-							</shieldMoney>
-							<shieldTags MayRequire="jecrell.jecstools">
-							  <li>ShieldsOrientHeavy</li>
-							  <li>ShieldAnkhah</li>
-							</shieldTags>
-						  </li>
-						</modExtensions>
 						<apparelMoney>
 						  <min>500</min>
 						  <max>1000</max>
@@ -430,18 +405,6 @@
 						  <li>OrientalHeavy</li>
 						  <li>EgyptianBasic</li>
 						</apparelTags>
-						<modExtensions>
-						  <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
-							<shieldMoney MayRequire="jecrell.jecstools">
-							  <min>300</min>
-							  <max>700</max>
-							</shieldMoney>
-							<shieldTags MayRequire="jecrell.jecstools">
-							  <li>ShieldsOrientHeavy</li>
-							  <li>ShieldAnkhah</li>
-							</shieldTags>
-						  </li>
-						</modExtensions>
 					  </PawnKindDef>
 					  <PawnKindDef ParentName="EgyptBaseFighterB_InAnkhaZone">
 						<defName>TSP_AR_EArcherH_InAnkhaZone</defName>
