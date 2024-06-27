@@ -28,7 +28,7 @@
 						<race>AC_AnkhaRace</race>
 						<fixedGender>Female</fixedGender>
 						<minGenerationAge>22</minGenerationAge>
-						<maxGenerationAge>30</maxGenerationAge>
+						<maxGenerationAge>65</maxGenerationAge>
 						<gearHealthRange>
 						  <min>1.0</min>
 						  <max>3.0</max>
@@ -52,7 +52,8 @@
 						<race>AC_AnkhaRace</race>
 						<canBeSapper>true</canBeSapper>
 						<isFighter>true</isFighter>
-						<maxGenerationAge>65</maxGenerationAge>
+						<minGenerationAge>22</minGenerationAge>
+						<maxGenerationAge>35</maxGenerationAge>
 						<combatPower>30</combatPower>
 						<gearHealthRange>
 						  <min>0.5</min>
@@ -188,7 +189,7 @@
 						<apparelRequired>
 							<li>AR_NetDress</li>
 							<li MayRequire="ludeon.rimworld.ideology">Apparel_HatHood</li>
-							<li MayRequire="ludeon.rimworld.ideology">ApparelRobe</li>
+							<li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
 						</apparelRequired>
 						<apparelTags>
 						  <li>EgyptianNoble</li>
@@ -223,11 +224,13 @@
 						<weaponTags>
 						  <li>EgyptianNoble</li>
 						  <li>OrientalMedium</li>
+						  <li>ShieldAnkhah</li>
 						</weaponTags>
 				  </PawnKindDef>
 				  <PawnKindDef ParentName="EgyptBaseFighter_InAnkhaZone">
 						<defName>TSP_AR_ELight_InAnkhaZone</defName>
-						<label>light fighter</label>
+						<label>light miit fighter</label>
+						<labelPlural>light miu fighters</labelPlural>
 						<canBeSapper>true</canBeSapper>
 						<apparelMoney>
 						  <min>250</min>
@@ -246,6 +249,20 @@
 						  <li>EgyptianLight</li>
 						  <li>EgyptianBasic</li>
 						</apparelTags>
+						<modExtensions>
+						  <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+							<shieldMoney MayRequire="jecrell.jecstools">
+							  <min>100</min>
+							  <max>500</max>
+							</shieldMoney>
+							<shieldTags MayRequire="jecrell.jecstools">
+							  <li>ShieldsOrientLight</li>
+							  <li>ShieldsOrientHeavy</li>
+							  <li>ShieldsNubian</li>
+							  <li>ShieldAnkhah</li>
+							</shieldTags>
+						  </li>
+						</modExtensions>
 				  </PawnKindDef>
 				  <PawnKindDef ParentName="EgyptBaseFighter_InAnkhaZone">
 						<defName>TSP_AR_ESpear_InAnkhaZone</defName>
@@ -263,6 +280,7 @@
 							</shieldMoney>
 							<shieldTags MayRequire="jecrell.jecstools">
 							  <li>ShieldsOrientHeavy</li>
+							  <li>ShieldAnkhah</li>
 							</shieldTags>
 						  </li>
 						</modExtensions>
@@ -354,7 +372,7 @@
 				  </PawnKindDef>
 				  <PawnKindDef ParentName="EgyptBaseFighterB_InAnkhaZone">
 						<defName>TSP_AR_EHeavy_InAnkhaZone</defName>
-						<label>heavy miit fighter</label>
+						<label Inherit="False">heavy miit fighter</label>
 						<labelPlural>heavy miu fighters</labelPlural>
 						<canBeSapper>true</canBeSapper>
 						<combatPower>70</combatPower>
@@ -370,6 +388,7 @@
 							</shieldMoney>
 							<shieldTags MayRequire="jecrell.jecstools">
 							  <li>ShieldsOrientHeavy</li>
+							  <li>ShieldAnkhah</li>
 							</shieldTags>
 						  </li>
 						</modExtensions>
@@ -414,11 +433,12 @@
 						<modExtensions>
 						  <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
 							<shieldMoney MayRequire="jecrell.jecstools">
-							  <min>100</min>
-							  <max>500</max>
+							  <min>300</min>
+							  <max>700</max>
 							</shieldMoney>
 							<shieldTags MayRequire="jecrell.jecstools">
 							  <li>ShieldsOrientHeavy</li>
+							  <li>ShieldAnkhah</li>
 							</shieldTags>
 						  </li>
 						</modExtensions>
@@ -450,8 +470,8 @@
 					  </PawnKindDef>
 					  <PawnKindDef ParentName="EgyptBaseFighterB_InAnkhaZone">
 						<defName>TSP_AR_EJavelineer_InAnkhaZone</defName>
-						<label>miit javelineer</label>
-						<label>miu javelineers</label>
+						<label Inherit="False">miit javelineer</label>
+						<labelPlural>miu javelineers</labelPlural>
 						<combatPower>50</combatPower>
 						<fixedGender>Female</fixedGender>
 						<apparelRequired>
@@ -473,6 +493,7 @@
 						  <li>OrientalHeavy</li>
 						  <li>EgyptianBasic</li>
 						</apparelTags>
+						
 				  </PawnKindDef>
 			</value>
 		</match>
