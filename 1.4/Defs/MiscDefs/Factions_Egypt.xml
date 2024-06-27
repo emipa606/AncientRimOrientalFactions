@@ -5,7 +5,7 @@
     <defName>AR_Faction_Egypt</defName>
     <label>Kemet</label>
     <categoryTag>Egypt</categoryTag>
-    <description>Ten thousand years ago in the Old Earth continent of Africa, the Ancient Egyptian civilization built itself up to be one of the greatest civilizations of all time. Ancient Egyptians referred to their country as Kemet, literally meaning ''Black Land''. Lasting thousands of years before being crushed by the Romans, its society was a complex, collectivist structure with defined hiearchies under the rule of one Pharaoh. The Pharaoh, who was considered to be a god himself, served as head of the religion, and he was responsible for enforcing the Ma'at, the gods' order, and balancing order and society both as deity and mediator. Important to these peoples are the cycle of flooding in floodplains, death and the proper process of embalming, and the aforementioned Ma'at. \n \n Egypt was considered ancient when Rome conquered it, so how did it end up on the Rim in its classical form? Although there is no conclusive evidence of intelligent alien life, the Egyptians' mythology has expanded to include a reptialian god called Ju Ahet, who is said to have ''taken up'' Kemetic Egyptians as slaves and scattered them across the galaxy. He ultimately came to value them and freed them, giving them the resources they needed to rebuild their civilization as it once was.</description>
+    <description>Ten thousand years ago in the Old Earth continent of Africa, the Ancient Egyptian civilization built itself up to be one of the greatest civilizations of all time. Ancient Egyptians referred to their country as Kemet, literally meaning ''Black Land'', named such after the rich, fertile soil along the banks of the Nile River. Lasting thousands of years before being crushed by the Romans, its society was a complex, collectivist structure with defined hiearchies under the rule of one Pharaoh. The Pharaoh, who was considered to be a god himself, served as head of the religion, and he was responsible for enforcing the Ma'at, the gods' order, and balancing divine order and secular society, both as deity and mediator to the greater gods. Important to these peoples are the cycle of flooding in floodplains, death and the proper process of embalming, and the aforementioned Ma'at. \n \n Egypt was considered ancient when Rome conquered it, so how did it end up on the Rim in its classical form? Although there is no conclusive evidence of intelligent alien life, the Egyptians' mythology has expanded to include a reptialian god called Ju Ahet, who is said to have ''taken up'' Kemetic Egyptians as slaves and scattered them across the galaxy. He ultimately came to value them and freed them, giving them the resources they needed to rebuild their civilization as it once was.</description>
     <pawnsPlural>Rmtt</pawnsPlural>
     <pawnSingular>Rmt</pawnSingular>
     <listOrderPriority>40</listOrderPriority>
@@ -28,6 +28,16 @@
       <li>(183,122,61)</li>
     </colorSpectrum>
     <apparelStuffFilter>
+      <thingDefs>
+		<li>AR_Copper</li>
+		<li MayRequire="tsp.isengriff.bronzecoppertin_split">ST_Copper</li>
+		<li>AR_Iron</li>
+		<li>AR_Bronze</li>
+        <li MayRequore="TSP.Isengriff.Storytime">Leather_Jeub</li>
+        <li MayRequire="tsp.isengriff.bronzecoppertin_split">ST_Tin</li>
+        <li>Plasteel</li>
+      </thingDefs>
+	  <!--
       <stuffCategoriesToAllow>
         <li>Woody</li>
         <li>Metallic</li>
@@ -35,9 +45,13 @@
         <li>Leathery</li>
         <li>Stony</li>
       </stuffCategoriesToAllow>
+	  -->
       <disallowedThingDefs>
         <li>Steel</li>
         <li>Plasteel</li>
+		<li>Uranium</li>
+		<li>Synthread</li>
+		<li>Hyperweave</li>
       </disallowedThingDefs>
     </apparelStuffFilter>
     <factionNameMaker>NamerFactionEgypt</factionNameMaker>
@@ -57,28 +71,31 @@
       <li>Rahism</li>
     </allowedCultures>
     <caravanTraderKinds>
-      <li>Caravan_Neolithic_BulkGoods</li>
-      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>TSP_AR_EgyptNormal</li>
+      <li>TSP_AR_EgyptArms</li>
       <li>Caravan_Neolithic_Slaver</li>
-      <li>Caravan_Neolithic_ShamanMerchant</li>
-      <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
+	  <li>TSP_AR_EgyptDealer_TechPrints</li>
+	  <li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Mining</li>
+	  <li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Textiles</li>
+      <!-- <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li> -->
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
+	  <li>TSP_AR_AM_TechPrint_Caravan_Visitor</li>
       <li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-      <li>Base_Neolithic_Standard</li>
+      <li>TSP_AR_EgyptNormal_Base</li>
+	  <li>TSP_AR_EgyptDealer_TechPrints_Base</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>
-      <min>0</min>
-      <!-- Freezing point Celcius -->
-      <max>90</max>
+      <min>-999</min>
+      <max>999</max>
     </allowedArrivalTemperatureRange>
     <maxPawnCostPerTotalPointsCurve>
       <points>
-        <li>(0,100)</li>
-        <li>(70, 150)</li>
+        <li>(0,50)</li>
+        <li>(70, 100)</li>
         <li>(700, 200)</li>
         <li>(1300, 300)</li>
         <li>(100000, 10000)</li>
@@ -132,15 +149,36 @@
       <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Approved</li>
       <!-- For some reason, the game eliminates the entire Precept category when generating Egypt if this exists in the code -->
       <!-- <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Respected</li> -->
-      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_AlienSlavery_Abhorrent</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_AlienSlavery_Horrible</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_AlienSlavery_Disapproved</li>
       <!-- For some reason, the game eliminates the entire Precept category when generating Egypt if this exists in the code -->
-      <!-- <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Acceptable</li> -->
+      <!-- <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_AlienSlavery_Acceptable</li> -->
     </disallowedPrecepts>
     <pawnGroupMakers>
       <li>
         <kindDef>Peaceful</kindDef>
+		<commonality>85</commonality>
+        <options>
+          <AR_EPeasant>75</AR_EPeasant>
+          <AR_Scribe>10</AR_Scribe>
+          <AR_ESlinger>20</AR_ESlinger>
+          <AR_ESkirmisher>20</AR_ESkirmisher>
+          <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+		  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+		  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+		  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+		  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+          <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+          <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+          <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+		  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+		  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+		<commonality>100</commonality>
         <options>
           <AR_EPeasant>100</AR_EPeasant>
           <AR_Scribe>10</AR_Scribe>
@@ -149,66 +187,132 @@
         </options>
       </li>
       <li>
-        <kindDef>Combat</kindDef>
+        <kindDef>Peaceful</kindDef>
+		<commonality>50</commonality>
         <options>
-          <AR_ELight>50</AR_ELight>
-          <AR_ESpear>50</AR_ESpear>
-          <AR_EArcher>50</AR_EArcher>
-          <AR_ESlinger>50</AR_ESlinger>
-          <AR_ESkirmisher>50</AR_ESkirmisher>
-          <AR_Pharao>15</AR_Pharao>
+          <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_EPeasant_InAnkhaZone>
+		  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+		  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+		  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+		  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+          <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">10</TSP_AR_Scribe_InAnkhaZone>
+          <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">7</TSP_AR_ESlinger_InAnkhaZone>
+          <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+		  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+		  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
         </options>
       </li>
       <li>
         <kindDef>Combat</kindDef>
+		<commonality>100</commonality>
         <options>
-          <AR_EHeavy>250</AR_EHeavy>
-          <AR_ESpearH>250</AR_ESpearH>
-          <AR_EArcherH>250</AR_EArcherH>
-          <AR_EJavelineer>250</AR_EJavelineer>
-          <AR_Pharao>50</AR_Pharao>
+			<AR_ELight>50</AR_ELight>
+			<AR_ESpear>50</AR_ESpear>
+			<AR_EArcher>50</AR_EArcher>
+			<AR_ESlinger>50</AR_ESlinger>
+			<AR_ESkirmisher>50</AR_ESkirmisher>
+			<AR_Pharao>15</AR_Pharao>
+
+			<TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ELight_InAnkhaZone>
+			<TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ESpear_InAnkhaZone>
+			<TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_EArcher_InAnkhaZone>
+			<TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ESlinger_InAnkhaZone>
+			<TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">15</TSP_AR_ESkirmisher_InAnkhaZone>
+			<TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">30</TSP_AR_EJavelineer_InAnkhaZone>
+			<Dromedary>2</Dromedary>
+			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
         </options>
       </li>
+      <li>
+        <kindDef>Combat</kindDef>
+		<commonality>100</commonality>
+        <options>
+			<AR_EHeavy>250</AR_EHeavy>
+			<AR_ESpearH>250</AR_ESpearH>
+			<AR_EArcherH>250</AR_EArcherH>
+			<AR_EJavelineer>250</AR_EJavelineer>
+			<AR_Pharao>50</AR_Pharao>
+
+			<TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EHeavy_InAnkhaZone>
+			<TSP_AR_ESpearH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESpearH_InAnkhaZone>
+			<TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcherH_InAnkhaZone>
+			<TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EJavelineer_InAnkhaZone>
+			<Dromedary>2</Dromedary>
+			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
+        </options>
+      </li>
+	  <li MayRequire="razar1.ankharace">
+		<kindDef>Combat</kindDef>
+		<commonality>50</commonality>
+		<options>
+			<TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EPeasant_InAnkhaZone>
+			<TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ELight_InAnkhaZone>
+			<TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESpear_InAnkhaZone>
+			<TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcher_InAnkhaZone>
+			<TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcherH_InAnkhaZone>
+			<TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESlinger_InAnkhaZone>
+			<TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESkirmisher_InAnkhaZone>
+			<TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EHeavy_InAnkhaZone>
+			<TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">60</TSP_AR_EJavelineer_InAnkhaZone>
+			<Dromedary>2</Dromedary>
+			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
+		</options>
+	  </li>
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <AR_ETrader>1</AR_ETrader>
+			<AR_ETrader>1</AR_ETrader>
+			<TSP_AR_ETrader_InAnkhaZone MayRequire="razar1.ankharace">1</TSP_AR_ETrader_InAnkhaZone>
         </traders>
         <carriers>
-          <Muffalo>1</Muffalo>
-          <Dromedary>100</Dromedary>
-          <Alpaca>1</Alpaca>
-          <Elephant>50</Elephant>
-          <!-- If you have the Desert Expanded Mod, MORE CAMELS -->
-          <AEXP_Camel MayRequire="VanillaExpanded.VAEED">100</AEXP_Camel>
+			<Muffalo>1</Muffalo>
+			<Dromedary>999</Dromedary>
+			<Alpaca>1</Alpaca>
+			<Elephant>50</Elephant>
+			<!-- If you have the Desert Expanded Mod, MORE CAMELS -->
+			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">999</AEXP_Camel>
         </carriers>
         <guards>
-          <AR_EPeasant>30</AR_EPeasant>
-          <AR_EHeavy>50</AR_EHeavy>
-          <AR_ESpearH>55</AR_ESpearH>
-          <AR_EArcherH>55</AR_EArcherH>
-          <AR_EJavelineer>50</AR_EJavelineer>
+			<AR_EPeasant>30</AR_EPeasant>
+			<AR_EHeavy>50</AR_EHeavy>
+			<AR_ESpearH>55</AR_ESpearH>
+			<AR_EArcherH>55</AR_EArcherH>
+			<AR_EJavelineer>50</AR_EJavelineer>
+			<AR_ETrader>10</AR_ETrader>
+			<TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">55</TSP_AR_EArcherH_InAnkhaZone>
+			<TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">10</TSP_AR_Scribe_InAnkhaZone>
+			<Dromedary>3</Dromedary>
+			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
         </guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <AR_EPeasant>75</AR_EPeasant>
-          <AR_ELight>50</AR_ELight>
-          <AR_ESpear>50</AR_ESpear>
-          <AR_EArcher>50</AR_EArcher>
-          <AR_ESlinger>50</AR_ESlinger>
-          <AR_ESkirmisher>50</AR_ESkirmisher>
-          <AR_EHeavy>50</AR_EHeavy>
-          <AR_ESpearH>50</AR_ESpearH>
-          <AR_EArcherH>50</AR_EArcherH>
-          <AR_EJavelineer>50</AR_EJavelineer>
-          <AR_Pharao>8</AR_Pharao>
-          <AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
-          <Dromedary>2</Dromedary>
+			<AR_EPeasant>75</AR_EPeasant>
+			<AR_ELight>50</AR_ELight>
+			<AR_ESpear>50</AR_ESpear>
+			<AR_EArcher>50</AR_EArcher>
+			<AR_ESlinger>50</AR_ESlinger>
+			<AR_ESkirmisher>50</AR_ESkirmisher>
+			<AR_EHeavy>50</AR_EHeavy>
+			<AR_ESpearH>50</AR_ESpearH>
+			<AR_EArcherH>50</AR_EArcherH>
+			<AR_EJavelineer>50</AR_EJavelineer>
+			<AR_Pharao>8</AR_Pharao>
+			<Dromedary>2</Dromedary>
+			<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
+			<TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EPeasant_InAnkhaZone>
+			<TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ELight_InAnkhaZone>
+			<TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESpear_InAnkhaZone>
+			<TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcher_InAnkhaZone>
+			<TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EArcherH_InAnkhaZone>
+			<TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESlinger_InAnkhaZone>
+			<TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_ESkirmisher_InAnkhaZone>
+			<TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">50</TSP_AR_EHeavy_InAnkhaZone>
+			<TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">60</TSP_AR_EJavelineer_InAnkhaZone>
         </options>
       </li>
     </pawnGroupMakers>
-    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <settlementTexturePath>Icon/EgyptianCulture</settlementTexturePath>
   </FactionDef>
 </Defs>
