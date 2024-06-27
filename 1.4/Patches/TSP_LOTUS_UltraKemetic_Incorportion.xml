@@ -147,16 +147,16 @@
 					<Mercenary_Gunner>20</Mercenary_Gunner>
 					<Mercenary_Elite>20</Mercenary_Elite>
 					
-          <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
-		  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
-		  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
-		  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
-		  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
-          <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
-          <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
-          <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
-		  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
-		  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+					  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+					  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+					  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+					  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+					  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+					  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+					  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+					  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+					  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+					  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
 					</guards>
 				  </li>
 				  <li>

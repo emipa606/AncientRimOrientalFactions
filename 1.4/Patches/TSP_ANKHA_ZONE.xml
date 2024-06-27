@@ -256,12 +256,12 @@
 						  <li>SpearMen</li>
 						</weaponTags>
 						<modExtensions>
-						  <li Class="PawnShields.ShieldPawnGeneratorProperties">
-							<shieldMoney>
+						  <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+							<shieldMoney MayRequire="jecrell.jecstools">
 							  <min>100</min>
 							  <max>500</max>
 							</shieldMoney>
-							<shieldTags>
+							<shieldTags MayRequire="jecrell.jecstools">
 							  <li>ShieldsOrientHeavy</li>
 							</shieldTags>
 						  </li>
@@ -363,12 +363,12 @@
 						  <li>Lance</li>
 						</weaponTags>
 						<modExtensions>
-						  <li Class="PawnShields.ShieldPawnGeneratorProperties">
-							<shieldMoney>
+						  <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+							<shieldMoney MayRequire="jecrell.jecstools">
 							  <min>100</min>
 							  <max>2000</max>
 							</shieldMoney>
-							<shieldTags>
+							<shieldTags MayRequire="jecrell.jecstools">
 							  <li>ShieldsOrientHeavy</li>
 							</shieldTags>
 						  </li>
@@ -412,12 +412,12 @@
 						  <li>EgyptianBasic</li>
 						</apparelTags>
 						<modExtensions>
-						  <li Class="PawnShields.ShieldPawnGeneratorProperties">
-							<shieldMoney>
+						  <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+							<shieldMoney MayRequire="jecrell.jecstools">
 							  <min>100</min>
 							  <max>500</max>
 							</shieldMoney>
-							<shieldTags>
+							<shieldTags MayRequire="jecrell.jecstools">
 							  <li>ShieldsOrientHeavy</li>
 							</shieldTags>
 						  </li>
