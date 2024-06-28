@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <PawnKindDef Name="PawnEgyptBase" Abstract="True">
     <defaultFactionType>AR_Faction_Egypt</defaultFactionType>
@@ -6,14 +6,14 @@
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>25~44</initialResistanceRange>
     <backstoryCryptosleepCommonality>0.001</backstoryCryptosleepCommonality>
-    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <backstoryCategories>
       <li>Tribal</li>
     </backstoryCategories>
     <race>Human</race>
-    <apparelTags Inherit="False">
+    <apparelTags>
       <li>EgyptianBasic</li>
-      <li>EgyptDress</li>
+	  <li>EgyptDress</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef Name="EgyptNoble" ParentName="EgyptCitizen" Abstract="True">
@@ -121,8 +121,8 @@
       <max>2.0</max>
     </gearHealthRange>
     <apparelMoney>
-      <min>285</min>
-      <max>500</max>
+      <min>500</min>
+      <max>700</max>
     </apparelMoney>
     <apparelAllowHeadgearChance>0.25</apparelAllowHeadgearChance>
     <weaponMoney>
@@ -132,7 +132,7 @@
     <weaponTags>
       <li>NeolithicMeleeBasic</li>
       <li>EgyptianLight</li>
-      <li>Toolagri</li>
+	  <li>Toolagri</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -143,8 +143,9 @@
     </techHediffsTags>
     <techHediffsChance>0.001</techHediffsChance>
     <invNutrition>3</invNutrition>
-    <apparelTags Inherit="False">
+    <apparelTags>
       <li>EgyptianBasic</li>
+	  <li>EgyptianDress</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptNoble">
@@ -156,7 +157,7 @@
     <combatPower>15</combatPower>
     <apparelRequired>
       <li MayRequire="ludeon.rimworld.ideology">Apparel_Robe</li>
-      <li MayRequire="ludeon.rimworld.ideology">Apparel_HatHood</li>
+	  <li MayRequire="ludeon.rimworld.ideology">Apparel_HatHood</li>
     </apparelRequired>
     <gearHealthRange>
       <min>1.0</min>
@@ -177,6 +178,8 @@
       <li>EgyptianNoble</li>
       <li>EgyptianScribe</li>
       <li>EgyptianAdvanced</li>
+	  <li>EgyptDress</li>
+	  <li>BestowerHood</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptNoble">
@@ -198,6 +201,7 @@
     <apparelTags>
       <li>EgyptianNoble</li>
       <li>EgyptianAdvanced</li>
+	  <li>EgyptDress</li>
     </apparelTags>
     <weaponTags>
       <li>EgyptianNoble</li>
@@ -209,7 +213,7 @@
     <label>light fighter</label>
     <canBeSapper>true</canBeSapper>
     <apparelMoney>
-      <min>250</min>
+      <min>400</min>
       <max>1300</max>
     </apparelMoney>
     <weaponMoney>
@@ -235,7 +239,7 @@
       <li>SpearMen</li>
     </weaponTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>100</min>
           <max>500</max>
@@ -246,7 +250,7 @@
       </li>
     </modExtensions>
     <apparelMoney>
-      <min>250</min>
+      <min>350</min>
       <max>600</max>
     </apparelMoney>
     <weaponMoney>
@@ -287,7 +291,7 @@
       <li>Slinger</li>
     </weaponTags>
     <apparelMoney>
-      <min>250</min>
+      <min>400</min>
       <max>3000</max>
     </apparelMoney>
     <weaponMoney>
@@ -314,7 +318,7 @@
       <li>MedievalMeleeDecent</li>
     </weaponTags>
     <apparelMoney>
-      <min>250</min>
+      <min>560</min>
       <max>5000</max>
     </apparelMoney>
     <weaponMoney>
@@ -338,7 +342,7 @@
       <li>Lance</li>
     </weaponTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>100</min>
           <max>2000</max>
@@ -387,7 +391,7 @@
       <li>EgyptianBasic</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>100</min>
           <max>500</max>
@@ -427,10 +431,10 @@
     <combatPower>50</combatPower>
     <weaponTags>
       <li>Javeliner</li>
-      <li>Javelineer</li>
+	  <li>Javelineer</li>
     </weaponTags>
     <apparelMoney>
-      <min>250</min>
+      <min>500</min>
       <max>3000</max>
     </apparelMoney>
     <weaponMoney>
@@ -446,7 +450,7 @@
   <PawnKindDef Name="Pharaoh" ParentName="EgyptNoble">
     <defName>AR_Pharao</defName>
     <label>Pharaoh</label>
-    <fixedGender>Male</fixedGender>
+	<fixedGender>Male</fixedGender>
     <combatPower>100</combatPower>
     <factionLeader>true</factionLeader>
     <minGenerationAge>18</minGenerationAge>
@@ -455,7 +459,7 @@
     <itemQuality>Legendary</itemQuality>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <biocodeWeaponChance Inherit="False">0.9</biocodeWeaponChance>
-    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <gearHealthRange>
       <min>1.5</min>
       <max>3.0</max>
@@ -481,7 +485,7 @@
   <PawnKindDef ParentName="Pharaoh">
     <defName>TSP_AR_Cleopatra</defName>
     <label>Pharaoh</label>
-    <fixedGender>Female</fixedGender>
+	<fixedGender>Female</fixedGender>
     <combatPower>70</combatPower>
     <factionLeader>true</factionLeader>
     <minGenerationAge>22</minGenerationAge>
@@ -502,10 +506,10 @@
       <min>5000</min>
       <max>10000</max>
     </weaponMoney>
-    <apparelRequired>
-      <li>AR_EgyptFancy</li>
-      <li>AR_Nemes</li>
-    </apparelRequired>
+	<apparelRequired>
+		<li>AR_EgyptFancy</li>
+		<li>AR_Nemes</li>
+	</apparelRequired>
     <weaponTags>
       <li>EgyptianRoyal</li>
       <li>EgyptianHeavy</li>

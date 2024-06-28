@@ -24,12 +24,12 @@
 							<li>EgyptianBasic</li>
 						</apparelTags>
 						<modExtensions>
-						  <li Class="AR_PawnShields.ShieldPawnGeneratorProperties" Inherit="False">
-							<shieldMoney Inherit="False">
+						  <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools" Inherit="False">
+							<shieldMoney MayRequire="jecrell.jecstools" Inherit="False">
 							  <min>100</min>
 							  <max>500</max>
 							</shieldMoney>
-							<shieldTags Inherit="False">
+							<shieldTags MayRequire="jecrell.jecstools" Inherit="False">
 							  <li>ShieldsOrientLight</li>
 							  <li>ShieldsOrientHeavy</li>
 							  <li>ShieldsNubian</li>

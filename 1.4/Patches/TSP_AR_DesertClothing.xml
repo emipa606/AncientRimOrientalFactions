@@ -46,19 +46,19 @@
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
   <!--
-	<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional" MayRequire="jecrell.jecstools">
 	Does this exist?
-		<xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
+		<xpath MayRequire="jecrell.jecstools">/Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
 		If it does, add Mod support for the following Comps.
-		<match Class="PatchOperationAddModExtension">
-			<xpath>/Defs/PawnKindDef[defName="AR_ESpear"]</xpath>
-			<value>
-				<li Class="PawnShields.ShieldPawnGeneratorProperties">
-				<shieldMoney>
+		<match Class="PatchOperationAddModExtension" MayRequire="jecrell.jecstools">
+			<xpath MayRequire="jecrell.jecstools">/Defs/PawnKindDef[defName="AR_ESpear"]</xpath>
+			<value MayRequire="jecrell.jecstools">
+				<li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+				<shieldMoney MayRequire="jecrell.jecstools">
 					<min>100</min>
 					<max>300</max>
 				</shieldMoney>
-				<shieldTags>
+				<shieldTags MayRequire="jecrell.jecstools">
 					<li>ShieldNubian</li>
 					<li>ShieldPersianLight</li>
 				</shieldTags>
