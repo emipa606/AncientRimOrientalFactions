@@ -11,7 +11,7 @@
       <li>Tribal</li>
     </backstoryCategories>
     <race>Human</race>
-    <apparelTags Inherit="False">
+    <apparelTags>
       <li>EgyptianBasic</li>
 	  <li>EgyptDress</li>
     </apparelTags>
@@ -121,8 +121,8 @@
       <max>2.0</max>
     </gearHealthRange>
     <apparelMoney>
-      <min>285</min>
-      <max>500</max>
+      <min>500</min>
+      <max>700</max>
     </apparelMoney>
     <apparelAllowHeadgearChance>0.25</apparelAllowHeadgearChance>
     <weaponMoney>
@@ -143,8 +143,9 @@
     </techHediffsTags>
     <techHediffsChance>0.001</techHediffsChance>
     <invNutrition>3</invNutrition>
-    <apparelTags Inherit="False">
+    <apparelTags>
       <li>EgyptianBasic</li>
+	  <li>EgyptianDress</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptNoble">
@@ -177,6 +178,8 @@
       <li>EgyptianNoble</li>
       <li>EgyptianScribe</li>
       <li>EgyptianAdvanced</li>
+	  <li>EgyptDress</li>
+	  <li>BestowerHood</li>
     </apparelTags>
   </PawnKindDef>
   <PawnKindDef ParentName="EgyptNoble">
@@ -198,6 +201,7 @@
     <apparelTags>
       <li>EgyptianNoble</li>
       <li>EgyptianAdvanced</li>
+	  <li>EgyptDress</li>
     </apparelTags>
     <weaponTags>
       <li>EgyptianNoble</li>
@@ -209,7 +213,7 @@
     <label>light fighter</label>
     <canBeSapper>true</canBeSapper>
     <apparelMoney>
-      <min>250</min>
+      <min>400</min>
       <max>1300</max>
     </apparelMoney>
     <weaponMoney>
@@ -246,7 +250,7 @@
       </li>
     </modExtensions>
     <apparelMoney>
-      <min>250</min>
+      <min>350</min>
       <max>600</max>
     </apparelMoney>
     <weaponMoney>
@@ -287,7 +291,7 @@
       <li>Slinger</li>
     </weaponTags>
     <apparelMoney>
-      <min>250</min>
+      <min>400</min>
       <max>3000</max>
     </apparelMoney>
     <weaponMoney>
@@ -314,7 +318,7 @@
       <li>MedievalMeleeDecent</li>
     </weaponTags>
     <apparelMoney>
-      <min>250</min>
+      <min>560</min>
       <max>5000</max>
     </apparelMoney>
     <weaponMoney>
@@ -430,7 +434,7 @@
 	  <li>Javelineer</li>
     </weaponTags>
     <apparelMoney>
-      <min>250</min>
+      <min>500</min>
       <max>3000</max>
     </apparelMoney>
     <weaponMoney>
