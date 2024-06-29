@@ -8,7 +8,7 @@
       <success>Always</success>
       <xpath>/Defs/FactionDef[defName="AR_Faction_Egypt"]/allowedCultures</xpath>
       <value>
-        <allowedCultures>
+        <allowedCultures Inherit="False">
           <li>KemeticCulture</li>
         </allowedCultures>
       </value>
