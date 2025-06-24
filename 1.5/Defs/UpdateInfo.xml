@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TabulaRasa.UpdateDef Abstract="true" Name="AncientRimOrientalFactions_UpdateInfoBase">
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2458189325</linkUrl>
+		<banner>UpdateInfo/AncientRimOrientalFactions</banner>
+	</TabulaRasa.UpdateDef>
+	<TabulaRasa.UpdateDef ParentName="AncientRimOrientalFactions_UpdateInfoBase" MayRequire="neronix17.toolbox">
+		<defName>AncientRimOrientalFactions_1_5_1</defName>
+		<date>2025/6/24</date>
+		<content>This mod will not be further updated, please use TurtleShroom Productions Proudly Presents: Ancient Rim (Continued) by TurtleShroom instead.</content>
+	</TabulaRasa.UpdateDef>
+</Defs>
+
