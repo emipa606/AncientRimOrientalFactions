@@ -15,10 +15,11 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  <!--
   <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
+    Does this exist?
     <xpath>/Defs/ThingDef[defName="Apparel_FSDesertRobe"]</xpath>
-    <!-- If it does, do this replacement. -->
+    If it does, do this replacement.
     <match Class="PatchOperationReplace">
       <success>Always</success>
       <xpath>/Defs/PawnKindDef[defName="AR_Scribe"]/apparelRequired</xpath>
@@ -28,8 +29,9 @@
         </apparelRequired>
       </value>
     </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
+    If the first XPATH does not exist, the original code stands.
   </Operation>
+  -->
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="Apparel_FSDesertRobe"]</xpath>
@@ -53,7 +55,7 @@
 		<match Class="PatchOperationAddModExtension">
 			<xpath>/Defs/PawnKindDef[defName="AR_ESpear"]</xpath>
 			<value>
-				<li Class="PawnShields.ShieldPawnGeneratorProperties">
+				<li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
 				<shieldMoney>
 					<min>100</min>
 					<max>300</max>

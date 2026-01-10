@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+	<xpath>/Defs/FactionDef[defName="UpperKemet"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName = "UpperKemet" or defName = "LowerKemet"]/allowedMemes</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+	<xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName = "UpperKemet" or defName = "LowerKemet"]/structureMemeWeights</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<!-- For the purposes of this Patch, we will assume the Egypt on the Nile Delta is nicer than the Nubians/Kushites -->
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+	<xpath>/Defs/FactionDef[defName="LowerKemet"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName = "LowerKemet"]/permanentEnemyToEveryoneExcept</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/MemeDef[defName="AM_Structure_Kemetism"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName = "UpperKemet" or defName = "LowerKemet"]/requiredMemes</xpath>
+			<value>
+				<li MayRequire="Sarg.AlphaMemes">AM_Structure_Kemetism</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/FactionDef[defName="UpperKemet"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName = "UpperKemet" or defName = "LowerKemet"]/pawnGroupMakers</xpath>
+			<value>
+				<pawnGroupMakers>
+				  <li>
+					<kindDef>Peaceful</kindDef>
+					<options>
+						<AR_EPeasant>100</AR_EPeasant>
+						<AR_Scribe>10</AR_Scribe>
+						<AR_ESlinger>20</AR_ESlinger>
+						<AR_ESkirmisher>20</AR_ESkirmisher>
+						<TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+						<TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+						<TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+						<TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+						<TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+						<TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+						<TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+						<TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+						<TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+						<TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+					</options>
+				  </li>
+				  <li>
+					<kindDef>Combat</kindDef>
+					<options>
+					  <AR_ELight>50</AR_ELight>
+					  <AR_ESpear>50</AR_ESpear>
+					  <AR_EArcher>50</AR_EArcher>
+					  <AR_ESlinger>50</AR_ESlinger>
+					  <AR_ESkirmisher>50</AR_ESkirmisher>
+					  <AR_Pharao>15</AR_Pharao>
+					  
+						<!-- As this society is more wealthy, it can afford mercenaries -->
+						<Grenadier_Destructive>5</Grenadier_Destructive>
+						<Mercenary_Slasher>7</Mercenary_Slasher>
+						<Mercenary_Gunner>11</Mercenary_Gunner>
+						<Mercenary_Elite>15</Mercenary_Elite>
+						
+					  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+					  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+					  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+					  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+					  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+					  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+					  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+					  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+					  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+					  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+					</options>
+				  </li>
+				  <li>
+					<kindDef>Combat</kindDef>
+					<options>
+					  <AR_EHeavy>250</AR_EHeavy>
+					  <AR_ESpearH>250</AR_ESpearH>
+					  <AR_EArcherH>250</AR_EArcherH>
+					  <AR_EJavelineer>250</AR_EJavelineer>
+					  <AR_Pharao>50</AR_Pharao>
+					  
+					<!-- As this society is more wealthy, it can afford mercenaries -->
+					<Grenadier_Destructive>20</Grenadier_Destructive>
+					<Mercenary_Slasher>75</Mercenary_Slasher>
+					<Mercenary_Gunner>80</Mercenary_Gunner>
+					<Mercenary_Elite>85</Mercenary_Elite>
+					
+					  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+					  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+					  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+					  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+					  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+					  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+					  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+					  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+					  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+					  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+					</options>
+				  </li>
+				  <li>
+					<kindDef>Trader</kindDef>
+					<traders>
+					  <AR_ETrader>1</AR_ETrader>
+					</traders>
+					<carriers>
+					  <Muffalo>1</Muffalo>
+					  <Dromedary>200</Dromedary>
+					  <Alpaca>1</Alpaca>
+					  <Elephant>50</Elephant>
+					  <!-- If you have the Desert Expanded Mod, MORE CAMELS -->
+					  <AEXP_Camel MayRequire="VanillaExpanded.VAEED">200</AEXP_Camel>
+					</carriers>
+					<guards>
+					  <AR_EPeasant>20</AR_EPeasant>
+					  <AR_EHeavy>25</AR_EHeavy>
+					  <AR_ESpearH>25</AR_ESpearH>
+					  <AR_EArcherH>25</AR_EArcherH>
+					  <AR_EJavelineer>20</AR_EJavelineer>
+					  
+					<!-- As this society is more wealthy, it can afford mercenaries -->
+					<Grenadier_Destructive>13</Grenadier_Destructive>
+					<Mercenary_Slasher>17</Mercenary_Slasher>
+					<Mercenary_Gunner>20</Mercenary_Gunner>
+					<Mercenary_Elite>20</Mercenary_Elite>
+					
+					  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+					  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+					  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+					  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+					  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+					  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+					  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+					  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+					  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+					  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+					</guards>
+				  </li>
+				  <li>
+					<kindDef>Settlement</kindDef>
+					<options>
+					  <AR_EPeasant>75</AR_EPeasant>
+					  <AR_ELight>50</AR_ELight>
+					  <AR_ESpear>50</AR_ESpear>
+					  <AR_EArcher>50</AR_EArcher>
+					  <AR_ESlinger>50</AR_ESlinger>
+					  <AR_ESkirmisher>50</AR_ESkirmisher>
+					  <AR_EHeavy>50</AR_EHeavy>
+					  <AR_ESpearH>50</AR_ESpearH>
+					  <AR_EArcherH>50</AR_EArcherH>
+					  <AR_EJavelineer>50</AR_EJavelineer>
+					  <AR_Pharao>8</AR_Pharao>
+					  <AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
+					  <Dromedary>2</Dromedary>
+					  
+					  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+					  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+					  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+					  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+					  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+					  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+					  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+					  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+					  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+					  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+					  
+						<!-- As this society is more wealthy, it can afford mercenaries -->
+						<Grenadier_Destructive>15</Grenadier_Destructive>
+						<Mercenary_Slasher>17</Mercenary_Slasher>
+						<Mercenary_Gunner>10</Mercenary_Gunner>
+						<Mercenary_Elite>10</Mercenary_Elite>
+					</options>
+				  </li>
+				  
+					<li MayRequire="Ludeon.RimWorld.Ideology">
+						<kindDef>Miners</kindDef>
+						<commonality>1</commonality>
+						<options>
+							<AR_EPeasant>75</AR_EPeasant>
+							<Grenadier_Destructive>1.5</Grenadier_Destructive>
+							<Mercenary_Slasher>7</Mercenary_Slasher>
+							<Mercenary_Gunner>10</Mercenary_Gunner>
+							<Mercenary_Elite>10</Mercenary_Elite>
+							  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+							  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+							  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+							  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+							  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+							  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+							  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+							  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+							  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+							  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+						</options>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">
+						<kindDef>Hunters</kindDef>
+						<commonality>1</commonality>
+						<options>
+							<AR_EArcher>50</AR_EArcher>
+							<AR_ESlinger>50</AR_ESlinger>
+							<AR_EJavelineer>50</AR_EJavelineer>
+							<Grenadier_Destructive>1.5</Grenadier_Destructive>
+							<Mercenary_Slasher>7</Mercenary_Slasher>
+							<Mercenary_Gunner>10</Mercenary_Gunner>
+							<Mercenary_Elite>10</Mercenary_Elite>
+							  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+							  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+							  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+							  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+							  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+							  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+							  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+							  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+							  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+							  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+						</options>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">
+						<kindDef>Farmers</kindDef>
+						<commonality>1</commonality>
+						<options>
+							<AR_EPeasant>70</AR_EPeasant>
+							<AEXP_Camel MayRequire="VanillaExpanded.VAEED">4</AEXP_Camel>
+							<Dromedary>4</Dromedary>
+							<Grenadier_Destructive>1.5</Grenadier_Destructive>
+							<Mercenary_Slasher>7</Mercenary_Slasher>
+							<Mercenary_Gunner>10</Mercenary_Gunner>
+							<Mercenary_Elite>10</Mercenary_Elite>
+							  <TSP_AR_EPeasant_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EPeasant_InAnkhaZone>
+							  <TSP_AR_ELight_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ELight_InAnkhaZone>
+							  <TSP_AR_ESpear_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESpear_InAnkhaZone>
+							  <TSP_AR_EArcher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcher_InAnkhaZone>
+							  <TSP_AR_EArcherH_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EArcherH_InAnkhaZone>
+							  <TSP_AR_Scribe_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_Scribe_InAnkhaZone>
+							  <TSP_AR_ESlinger_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESlinger_InAnkhaZone>
+							  <TSP_AR_ESkirmisher_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_ESkirmisher_InAnkhaZone>
+							  <TSP_AR_EHeavy_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EHeavy_InAnkhaZone>
+							  <TSP_AR_EJavelineer_InAnkhaZone MayRequire="razar1.ankharace">5</TSP_AR_EJavelineer_InAnkhaZone>
+						</options>
+					</li>
+				</pawnGroupMakers>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/FactionDef[defName="UpperKemet"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName = "UpperKemet" or defName = "LowerKemet"]/backstoryFilters</xpath>
+			<value>
+				<backstoryFilters>
+				  <li>
+					<categories>
+					  <li>Tribal</li>
+					  <li>Hunter</li>
+					  <li>TribalHunter</li>
+					  <li>ImperialFighter</li>
+					</categories>
+				  </li>
+				</backstoryFilters>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/FactionDef[defName="UpperKemet"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName = "UpperKemet" or defName = "LowerKemet"]/caravanTraderKinds</xpath>
+			<value>
+				<caravanTraderKinds>
+					<li>TSP_AR_EgyptNormal</li>
+					<li>TSP_AR_EgyptArms</li>
+					<li>TSP_AR_EgyptDealer_TechPrints</li>
+					<li>Caravan_Neolithic_Slaver</li>
+					<li>Caravan_Neolithic_ShamanMerchant</li>
+					<li>Caravan_Outlander_Exotic</li>
+					<li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
+					<li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Mining</li>
+					<li MayRequire="zhrocks11.letstrade">Caravan_Neolithic_Textiles</li>
+					<li MayRequire="zhrocks11.letstrade">Caravan_Outlander_Archeological</li>
+				</caravanTraderKinds>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/FactionDef[defName="UpperKemet"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName = "UpperKemet" or defName = "LowerKemet"]/visitorTraderKinds</xpath>
+			<value>
+				<visitorTraderKinds>
+					<li>TSP_AR_AM_TechPrint_Caravan_Visitor</li>
+					<li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
+				</visitorTraderKinds>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/FactionDef[defName="UpperKemet"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName = "UpperKemet" or defName = "LowerKemet"]/baseTraderKinds</xpath>
+			<value>
+				<li>TSP_AR_AM_TechPrint_Caravan_Visitor</li>
+				<li MayRequire="sarg.alphamemes">TSP_AR_AM_PristineMarble_Caravan</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/FactionDef[defName="UpperKemet"]/categoryTag</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName="UpperKemet"]/categoryTag</xpath>
+			<value>
+				<categoryTag>Egypt</categoryTag>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName="UpperKemet"]</xpath>
+			<value>
+				<categoryTag>Egypt</categoryTag>
+			</value>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/FactionDef[defName="LowerKemet"]/categoryTag</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName="LowerKemet"]/categoryTag</xpath>
+			<value>
+				<categoryTag>Egypt</categoryTag>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/FactionDef[defName="LowerKemet"]</xpath>
+			<value>
+				<categoryTag>Egypt</categoryTag>
+			</value>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>
